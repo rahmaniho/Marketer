@@ -26,6 +26,10 @@ const BADGE_MAP: Record<string, { label: string; tone: 'success' | 'warning' | '
   recyclable: { label: 'قابل بازیافت', tone: 'success', icon: 'refresh' },
   'cruelty-free': { label: 'Cruelty-Free', tone: 'success', icon: 'leaf' },
   'best-price': { label: '💰 بهترین قیمت', tone: 'warning', icon: 'wallet' },
+  // ── نشان‌های ماژول کالاهای مصرفی (کارن سافت)
+  seasonal: { label: '🎁 فصلی', tone: 'vip', icon: 'gift' },
+  economy: { label: 'اقتصادی', tone: 'success', icon: 'wallet' },
+  premium: { label: 'پریمیوم', tone: 'vip', icon: 'crown' },
 };
 
 export const ProductCard = ({ product, brand, compact = false }: { product: Product; brand?: Brand; compact?: boolean }) => {

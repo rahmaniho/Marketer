@@ -13,6 +13,12 @@ import { faNum, jalaliDate, percentFa, toEnDigits, toman, tomanShort, daysUntil 
 import { contracts as mockContracts } from '@/data/crm';
 import { productsByBrand } from '@/data/products';
 import { PerUnitPrices, SpecChips, SpecGrid, nextTierNudge } from '@/modules/dh';
+import {
+  PerUnitPrices as MiscPerUnitPrices,
+  SpecChips as MiscSpecChips,
+  SpecGrid as MiscSpecGrid,
+  nextTierNudge as miscNextTierNudge,
+} from '@/modules/misc';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -463,6 +469,26 @@ const ProductDetail = () => {
                     <div className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-[11.5px] font-bold text-emerald-800 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
                       <Icon name="trendingDown" className="h-4 w-4 flex-none" />
                       {nextTierNudge(product, qty, useStore.getState().settings)!.message}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {tab === 'specs' && product.misc && (
+                <div className="mt-5 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="flex items-center gap-1.5 text-[13px] font-extrabold text-ink-800 dark:text-ink-100">
+                      <Icon name="box" className="h-4 w-4 text-violet-500" />
+                      مشخصات تخصصی کالای مصرفی
+                    </h3>
+                    <MiscSpecChips product={product} max={4} />
+                  </div>
+                  <MiscSpecGrid product={product} />
+                  <MiscPerUnitPrices product={product} />
+                  {miscNextTierNudge(product, qty, useStore.getState().settings) && (
+                    <div className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-[11.5px] font-bold text-emerald-800 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
+                      <Icon name="trendingDown" className="h-4 w-4 flex-none" />
+                      {miscNextTierNudge(product, qty, useStore.getState().settings)!.message}
                     </div>
                   )}
                 </div>
