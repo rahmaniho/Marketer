@@ -73,7 +73,7 @@ const MiscAdmin = () => {
   const [complianceModal, setComplianceModal] = useState<Compliance | null>(null);
   const [weight, setWeight] = useState(80);
 
-  const modules = settings.modules ?? { food: true, detergent: true, hygiene: true, misc: true };
+  const modules = settings.modules ?? { food: true, detergent: true, hygiene: true, misc: true, snacks: true };
 
   const msBrandsFiltered = useMemo(
     () => (industryFilter === 'all' ? msBrands : msBrands.filter((b) => b.industry === industryFilter)),

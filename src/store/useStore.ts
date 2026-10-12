@@ -26,6 +26,7 @@ import { brands as mockBrands } from '@/data/brands';
 import { offers as mockOffers } from '@/data/offers';
 import { dhBrands, dhCompliance, dhOffers, dhProducts } from '@/modules/dh/data';
 import { msBrands, msCompliance, msOffers, msProducts } from '@/modules/misc/data';
+import { snBrands, snCompliance, snOffers, snProducts } from '@/modules/snacks/data';
 import { customers as mockCustomers, orders as mockOrders } from '@/data/ops';
 import { contracts as mockContracts } from '@/data/crm';
 import { settings as defaultSettings } from '@/data/content';
@@ -576,6 +577,8 @@ export const isModuleEnabled = (settings: Settings | undefined | null, module: M
       return m.detergent ?? true;
     case 'hygiene':
       return m.hygiene ?? true;
+    case 'snacks':
+      return m.snacks ?? true;
     default:
       return m.misc ?? true;
   }
@@ -583,17 +586,18 @@ export const isModuleEnabled = (settings: Settings | undefined | null, module: M
 
 /**
  * یافتن محصول — بدون فیلتر Feature Flag (برای سبد خرید و سوابق سفارش)
- * محصولات همه ماژول‌ها (شوینده، بهداشتی، کالاهای مصرفی) جست‌وجو می‌شوند.
+ * محصولات همه ماژول‌ها (شوینده، بهداشتی، کالاهای مصرفی، تنقلات) جست‌وجو می‌شوند.
  */
 export const findProduct = (state: Pick<StoreState, 'productEdits'>, id: string): Product | undefined =>
   state.productEdits[id] ??
   mockProducts.find((p) => p.id === id) ??
   dhProducts.find((p) => p.id === id) ??
-  msProducts.find((p) => p.id === id);
+  msProducts.find((p) => p.id === id) ??
+  snProducts.find((p) => p.id === id);
 
 export const allProducts = (state: Pick<StoreState, 'productEdits' | 'deletedProductIds' | 'settings'>): Product[] => {
   const editedIds = new Set(Object.keys(state.productEdits));
-  const base = [...mockProducts, ...dhProducts, ...msProducts].filter(
+  const base = [...mockProducts, ...dhProducts, ...msProducts, ...snProducts].filter(
     (p) => !state.deletedProductIds.includes(p.id) && !editedIds.has(p.id),
   );
   const edited = Object.values(state.productEdits).filter((p) => !state.deletedProductIds.includes(p.id));
@@ -607,6 +611,7 @@ export const allBrands = (state: Pick<StoreState, 'brandEdits' | 'settings'>): B
     ...mockBrands,
     ...dhBrands.filter((b) => !editedIds.has(b.id)),
     ...msBrands.filter((b) => !editedIds.has(b.id)),
+    ...snBrands.filter((b) => !editedIds.has(b.id)),
   ];
   return merged.filter((b) => {
     if (b.id.startsWith('dh-br-')) {
@@ -615,28 +620,37 @@ export const allBrands = (state: Pick<StoreState, 'brandEdits' | 'settings'>): B
       return (det && isModuleEnabled(state.settings, 'detergent')) || (hyg && isModuleEnabled(state.settings, 'hygiene'));
     }
     if (b.id.startsWith('ms-br-')) return isModuleEnabled(state.settings, 'misc');
+    if (b.id.startsWith('sn-br-')) return isModuleEnabled(state.settings, 'snacks');
     return isModuleEnabled(state.settings, 'food');
   });
 };
 
 export const getAllOffers = (state: Pick<StoreState, 'offerEdits' | 'settings'>): Offer[] => {
   const editedIds = new Set(Object.keys(state.offerEdits));
-  const merged = [...Object.values(state.offerEdits), ...mockOffers, ...dhOffers.filter((o) => !editedIds.has(o.id)), ...msOffers.filter((o) => !editedIds.has(o.id))];
+  const merged = [
+    ...Object.values(state.offerEdits),
+    ...mockOffers,
+    ...dhOffers.filter((o) => !editedIds.has(o.id)),
+    ...msOffers.filter((o) => !editedIds.has(o.id)),
+    ...snOffers.filter((o) => !editedIds.has(o.id)),
+  ];
   return merged.filter((o) => {
     if (o.id.startsWith('dho-')) return isModuleEnabled(state.settings, 'detergent');
     if (o.id.startsWith('hho-')) return isModuleEnabled(state.settings, 'hygiene');
     if (o.id.startsWith('mso-')) return isModuleEnabled(state.settings, 'misc');
+    if (o.id.startsWith('sno-')) return isModuleEnabled(state.settings, 'snacks');
     return isModuleEnabled(state.settings, 'food');
   });
 };
 
-/** مجوزها و استانداردها (با امکان ویرایش ادمین) — ماژول شوینده/بهداشتی + کالاهای مصرفی */
+/** مجوزها و استانداردها (با امکان ویرایش ادمین) — همه ماژول‌ها */
 export const allCompliance = (state: Pick<StoreState, 'complianceEdits'>): Compliance[] => {
   const editedIds = new Set(Object.keys(state.complianceEdits));
   return [
     ...Object.values(state.complianceEdits),
     ...dhCompliance.filter((c) => !editedIds.has(c.id)),
     ...msCompliance.filter((c) => !editedIds.has(c.id)),
+    ...snCompliance.filter((c) => !editedIds.has(c.id)),
   ];
 };
 

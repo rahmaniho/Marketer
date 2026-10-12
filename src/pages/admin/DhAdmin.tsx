@@ -84,7 +84,7 @@ const DhAdmin = () => {
   const [complianceModal, setComplianceModal] = useState<Compliance | null>(null);
   const [weight, setWeight] = useState(120);
 
-  const modules = settings.modules ?? { food: true, detergent: true, hygiene: true, misc: true };
+  const modules = settings.modules ?? { food: true, detergent: true, hygiene: true, misc: true, snacks: true };
 
   const dhBrandsFiltered = useMemo(
     () => (industryFilter === 'all' ? dhBrands : dhBrands.filter((b) => b.industry === industryFilter)),
