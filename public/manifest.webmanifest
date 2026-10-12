@@ -1,0 +1,62 @@
+{
+  "id": "bazaromdeh-marketer-demo",
+  "name": "بازارعمده — پلتفرم B2B عمده‌فروشی مواد غذایی",
+  "short_name": "بازارعمده",
+  "description": "دموی پلتفرم عمده‌فروشی هوشمند مواد غذایی ایرانی و وارداتی مجاز: کاتالوگ، نرخ‌نامه پله‌ای، اعتبار، فاکتور رسمی و پنل مدیریت. طراحی و توسعه: کارن سافت (Karen-soft.ir)",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#f6f8f7",
+  "theme_color": "#0f684c",
+  "categories": ["business", "food", "shopping", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "کاتالوگ کالا",
+      "short_name": "کاتالوگ",
+      "url": ".#/catalog",
+      "description": "مشاهده کاتالوگ کالاهای عمده"
+    },
+    {
+      "name": "سبد خرید عمده",
+      "short_name": "سبد خرید",
+      "url": ".#/cart",
+      "description": "مشاهده سبد خرید و تسویه"
+    },
+    {
+      "name": "پنل مدیریت",
+      "short_name": "پنل مدیریت",
+      "url": ".#/admin/login",
+      "description": "ورود به پنل مدیریت و فروش"
+    }
+  ]
+}
