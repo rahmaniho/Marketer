@@ -1,0 +1,11 @@
+/* فونت وزیرمتن — نسخه متغیر (Variable) به‌صورت لوکال و بدون CDN
+   مسیر نسبت به همین فایل: /fonts/Vazirmatn-Variable.woff2
+   مجوز: SIL Open Font License 1.1 */
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('Vazirmatn-Variable.woff2') format('woff2 supports variations'),
+    url('Vazirmatn-Variable.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
