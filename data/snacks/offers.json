@@ -1,0 +1,162 @@
+{
+  "offers": [
+    {
+      "id": "sno-001",
+      "title": "جشنواره تنقلات نوروز",
+      "kind": "seasonal",
+      "description": "تخفیف ویژه شکلات، آبنبات و پاستیل برای سفره هفت‌سین و پذیرایی شب عید.",
+      "percent": 12,
+      "code": "SNACKNOWRUZ",
+      "categoryIds": [
+        "sn-c-choc",
+        "sn-c-candy"
+      ],
+      "minCartAmount": 18000000,
+      "minQty": 5,
+      "days": 45,
+      "color": "#92400e",
+      "icon": "gift"
+    },
+    {
+      "id": "sno-002",
+      "title": "آفر بازگشایی مدارس",
+      "kind": "seasonal",
+      "description": "بیسکویت، کیک و آدامس مدرسه‌ای با تخفیف مهرماه — ویژه بوفه مدارس و سوپرمارکت‌ها.",
+      "percent": 10,
+      "code": "SCHOOLSNACK",
+      "categoryIds": [
+        "sn-c-bisc",
+        "sn-c-cake",
+        "sn-c-gum"
+      ],
+      "minCartAmount": 12000000,
+      "minQty": 8,
+      "days": 40,
+      "color": "#d97706",
+      "icon": "paper"
+    },
+    {
+      "id": "sno-003",
+      "title": "آفر ماه مبارک رمضان",
+      "kind": "seasonal",
+      "description": "تافی، خرما‌جایگزین و تنقلات افطاری با تخفیف ویژه.",
+      "percent": 8,
+      "code": "RAMADANSNACK",
+      "categoryIds": [
+        "sn-c-choc",
+        "sn-c-candy"
+      ],
+      "minCartAmount": 10000000,
+      "minQty": 4,
+      "days": 30,
+      "color": "#14b8a6",
+      "icon": "moon"
+    },
+    {
+      "id": "sno-004",
+      "title": "پله حجمی چیپس و پفک",
+      "kind": "volume",
+      "description": "از ۳۰ کارتن به بالا ۶٪ و از ۸۰ کارتن ۱۰٪ تخفیف حجمی.",
+      "percent": 10,
+      "code": "CHIPSBATCH",
+      "categoryIds": [
+        "sn-c-chips",
+        "sn-c-snack"
+      ],
+      "minCartAmount": 6000000,
+      "minQty": 30,
+      "days": 90,
+      "color": "#f59e0b",
+      "icon": "chips"
+    },
+    {
+      "id": "sno-005",
+      "title": "آفر مشتریان VIP شکلات",
+      "kind": "vip",
+      "description": "قیمت ویژه VIP برای خریداران عمده شکلات و آبنبات.",
+      "percent": 9,
+      "code": "VIPCHOC",
+      "categoryIds": [
+        "sn-c-choc",
+        "sn-c-candy"
+      ],
+      "minCartAmount": 45000000,
+      "minQty": 3,
+      "days": 120,
+      "color": "#be185d",
+      "icon": "crown",
+      "vipOnly": true
+    },
+    {
+      "id": "sno-006",
+      "title": "تسویه نقدی تنقلات",
+      "kind": "cash",
+      "description": "۴٪ تخفیف اضافه برای تسویه نقدی سفارش‌های ماژول تنقلات.",
+      "percent": 4,
+      "code": "CASHSNACK",
+      "minCartAmount": 10000000,
+      "minQty": 3,
+      "days": 180,
+      "color": "#16a34a",
+      "icon": "wallet"
+    },
+    {
+      "id": "sno-007",
+      "title": "اولین سفارش سوپرمارکت‌ها",
+      "kind": "first-order",
+      "description": "هدیه خوش‌آمدگویی ۷٪ برای اولین سفارش عمده.",
+      "percent": 7,
+      "code": "HELLOSNACK",
+      "minCartAmount": 5000000,
+      "minQty": 4,
+      "days": 120,
+      "color": "#0ea5e9",
+      "icon": "rocket"
+    },
+    {
+      "id": "sno-008",
+      "title": "جشنواره آدامس و خوشبوکننده",
+      "kind": "timed",
+      "description": "تخفیف آدامس‌های بدون قند و نعنایی برای داروخانه‌ها و سوپرمارکت‌ها.",
+      "percent": 6,
+      "code": "GUMFRESH",
+      "categoryIds": [
+        "sn-c-gum"
+      ],
+      "minCartAmount": 8000000,
+      "minQty": 6,
+      "days": 75,
+      "color": "#14b8a6",
+      "icon": "leaf"
+    },
+    {
+      "id": "sno-009",
+      "title": "آفر تنقلات کودک",
+      "kind": "timed",
+      "description": "پاستیل، پفک و آبنبات میوه‌ای با تخفیف ویژه.",
+      "percent": 8,
+      "code": "KIDSNACK",
+      "minCartAmount": 9000000,
+      "minQty": 8,
+      "days": 60,
+      "color": "#ec4899",
+      "icon": "candy"
+    },
+    {
+      "id": "sno-010",
+      "title": "جشنواره پاپ‌کورن سینمایی",
+      "kind": "timed",
+      "description": "پاپ‌کورن و اسنک همراه فیلم با تخفیف تابستانه.",
+      "percent": 7,
+      "code": "POPCORN",
+      "categoryIds": [
+        "sn-c-pop"
+      ],
+      "minCartAmount": 6000000,
+      "minQty": 6,
+      "days": 55,
+      "color": "#eab308",
+      "icon": "star"
+    }
+  ]
+}

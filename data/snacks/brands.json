@@ -1,0 +1,754 @@
+{
+  "brands": [
+    {
+      "name": "مزمز",
+      "nameEn": "Mazmaz",
+      "company": "مزمز",
+      "industry": "chips",
+      "country": "ایران",
+      "productLines": [
+        "چیپس ساده",
+        "چیپس موج‌دار",
+        "چیپس کتان",
+        "پفک نمکی",
+        "پاپ‌کورن",
+        "اسنک",
+        "چیپس ذرت"
+      ]
+    },
+    {
+      "name": "وی‌نیتو",
+      "nameEn": "V.Nito",
+      "company": "گروه صنعتی گلرنگ",
+      "industry": "chips",
+      "country": "ایران",
+      "productLines": [
+        "چیپس ساده",
+        "چیپس موج‌دار",
+        "چیپس بیکن باربیکیو",
+        "پاپ‌کورن"
+      ]
+    },
+    {
+      "name": "لینا",
+      "nameEn": "Lina",
+      "company": "لینا",
+      "industry": "chips",
+      "country": "ایران",
+      "productLines": [
+        "چیپس",
+        "اسنک",
+        "پاپ‌کورن"
+      ]
+    },
+    {
+      "name": "دوریتوس",
+      "nameEn": "Doritos",
+      "company": "PepsiCo / دینا",
+      "industry": "chips",
+      "country": "آمریکا",
+      "productLines": [
+        "چیپس ناچو پنیری",
+        "چیپس ساور کریم"
+      ]
+    },
+    {
+      "name": "تاکیس",
+      "nameEn": "Takis",
+      "company": "Barcel",
+      "industry": "chips",
+      "country": "مکزیک",
+      "productLines": [
+        "چیپس فوئگو",
+        "چیپس بلو هیت",
+        "چیپس ناچو"
+      ]
+    },
+    {
+      "name": "پرینگلز",
+      "nameEn": "Pringles",
+      "company": "Kellogg's",
+      "industry": "chips",
+      "country": "ترکیه",
+      "productLines": [
+        "چیپس ساده",
+        "چیپس BBQ",
+        "چیپس Hot & Spicy",
+        "چیپس نمک و سرکه",
+        "چیپس پنیر چدار"
+      ]
+    },
+    {
+      "name": "لیز استاکس",
+      "nameEn": "Lay's Stax",
+      "company": "PepsiCo",
+      "industry": "chips",
+      "country": "آمریکا",
+      "productLines": [
+        "چیپس BBQ",
+        "چیپس ساور کریم",
+        "چیپس نمکی"
+      ]
+    },
+    {
+      "name": "چی‌توز",
+      "nameEn": "Cheetos",
+      "company": "گروه صنعتی دینا (under license Frito-Lay)",
+      "industry": "puffs",
+      "country": "ایران",
+      "productLines": [
+        "چیپس",
+        "پفک",
+        "اسنک پنیری",
+        "اسنک حلقوی",
+        "چیپس مینیاتوری"
+      ]
+    },
+    {
+      "name": "مینو",
+      "nameEn": "Minoo",
+      "company": "گروه صنعتی مینو",
+      "industry": "puffs",
+      "country": "ایران",
+      "productLines": [
+        "پفک",
+        "چیپس",
+        "اسنک",
+        "پفک نمکی",
+        "چیپس ذرت"
+      ]
+    },
+    {
+      "name": "پارس مینو",
+      "nameEn": "Pars Minoo",
+      "company": "پارس مینو",
+      "industry": "puffs",
+      "country": "ایران",
+      "productLines": [
+        "پفک",
+        "چیپس",
+        "اسنک",
+        "غلات حجیم‌شده",
+        "چوب شور"
+      ]
+    },
+    {
+      "name": "چاکلز",
+      "nameEn": "Chuckles",
+      "company": "به‌آرا (under former license Lorenz)",
+      "industry": "snacks",
+      "country": "ایران",
+      "productLines": [
+        "چیپس",
+        "اسنک",
+        "پاپ‌کورن",
+        "آجیل",
+        "اسنک بادام زمینی",
+        "کراکس",
+        "اسنک غلات"
+      ]
+    },
+    {
+      "name": "دینا",
+      "nameEn": "Dina",
+      "company": "گروه صنعتی دینا",
+      "industry": "snacks",
+      "country": "ایران",
+      "productLines": [
+        "کرانچی",
+        "نیک‌ناک",
+        "کتل‌چیپس",
+        "پاپ‌کورن",
+        "چیس",
+        "پفک",
+        "اسنک",
+        "کوکی",
+        "بار"
+      ]
+    },
+    {
+      "name": "تاپیس",
+      "nameEn": "Tapis",
+      "company": "شرکت شهد پاک",
+      "industry": "snacks",
+      "country": "ایران",
+      "productLines": [
+        "چیپس",
+        "اسنک",
+        "پاپ‌کورن",
+        "غلات حجیم‌شده"
+      ]
+    },
+    {
+      "name": "لی لی ناز",
+      "nameEn": "Lili Naz",
+      "company": "شرکت هری دنیا",
+      "industry": "snacks",
+      "country": "ایران",
+      "productLines": [
+        "اسنک استیک",
+        "پفک کرانچی",
+        "پفک نمکی"
+      ]
+    },
+    {
+      "name": "پف‌استار",
+      "nameEn": "Puff Star",
+      "company": "پف‌استار",
+      "industry": "snacks",
+      "country": "ایران",
+      "productLines": [
+        "اسنک‌های فراسودمند بر پایه غلات"
+      ]
+    },
+    {
+      "name": "شونیز",
+      "nameEn": "Shoniz",
+      "company": "شرکت صنعتی داداش برادر",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "ویفر",
+        "تافی",
+        "آدامس",
+        "بیسکویت",
+        "کیک",
+        "کارامل",
+        "شکلات بار",
+        "آبنبات میوه‌ای",
+        "شکلات تلخ",
+        "شکلات مغزدار",
+        "شکلات صبحانه"
+      ]
+    },
+    {
+      "name": "شیرین عسل",
+      "nameEn": "Shirin Asal",
+      "company": "شیرین عسل",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "تافی",
+        "ویفر",
+        "بیسکویت",
+        "کیک",
+        "کراکس",
+        "چیپس",
+        "اسنک"
+      ]
+    },
+    {
+      "name": "پارمیدا",
+      "nameEn": "Parmida",
+      "company": "پارمیدا",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "شکلات مغزدار",
+        "شکلات تلخ ۸۷٪",
+        "شکلات تخته‌ای",
+        "شکلات صبحانه"
+      ]
+    },
+    {
+      "name": "باراکا",
+      "nameEn": "Baraka",
+      "company": "باراکا",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "شکلات تلخ",
+        "شکلات شیری"
+      ]
+    },
+    {
+      "name": "فرمند",
+      "nameEn": "Farmand",
+      "company": "فرمند",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات تلخ ۷۰٪",
+        "شکلات شیری",
+        "شکلات تخته‌ای",
+        "شکلات مغزدار"
+      ]
+    },
+    {
+      "name": "آیدین",
+      "nameEn": "Aydin",
+      "company": "آیدین",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات شیری",
+        "شکلات تلخ ۹۵٪",
+        "ویفر رول فندقی",
+        "بیسکویت"
+      ]
+    },
+    {
+      "name": "عباسپور",
+      "nameEn": "Abbaspour",
+      "company": "عباسپور (برند آدرین)",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "تافی",
+        "آبنبات",
+        "ویفر",
+        "بیسکویت",
+        "کیک",
+        "آدامس",
+        "قرص نعناع",
+        "اسنک"
+      ]
+    },
+    {
+      "name": "شیرین شکلات تبریز",
+      "nameEn": "Shirin Chocolate Tabriz",
+      "company": "شیرین شکلات تبریز",
+      "industry": "chocolate",
+      "country": "ایران",
+      "productLines": [
+        "بیسکویت",
+        "ویفر",
+        "کیک",
+        "شکلات"
+      ]
+    },
+    {
+      "name": "نوتلا",
+      "nameEn": "Nutella",
+      "company": "Ferrero",
+      "industry": "chocolate",
+      "country": "ایتالیا",
+      "productLines": [
+        "شکلات صبحانه"
+      ]
+    },
+    {
+      "name": "سیبل",
+      "nameEn": "Cebil",
+      "company": "سیبل",
+      "industry": "chocolate",
+      "country": "ترکیه",
+      "productLines": [
+        "شکلات"
+      ]
+    },
+    {
+      "name": "اسنیکرز",
+      "nameEn": "Snickers",
+      "company": "Mars",
+      "industry": "chocolate",
+      "country": "آمریکا",
+      "productLines": [
+        "شکلات",
+        "شکلات کاراملی با بادام زمینی"
+      ]
+    },
+    {
+      "name": "شیرین وطن",
+      "nameEn": "Shirin Vatan",
+      "company": "شیرین وطن (تونتاب، داوننی، توی بو، کارمینا، سورنا)",
+      "industry": "candy",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "تافی",
+        "پتی‌بور",
+        "پشمک",
+        "بیسکویت کرم‌دار",
+        "کیک لایه‌ای",
+        "چوب شور",
+        "ویفر",
+        "آبنبات"
+      ]
+    },
+    {
+      "name": "حلاوت پردیس",
+      "nameEn": "Halavat Pardis",
+      "company": "حلاوت پردیس (شکلات ما، لاویش، ژلاتا)",
+      "industry": "candy",
+      "country": "ایران",
+      "productLines": [
+        "شکلات",
+        "تافی",
+        "آبنبات",
+        "دراژه",
+        "ژله",
+        "فرآورده‌های کاکائویی"
+      ]
+    },
+    {
+      "name": "ام اند ام",
+      "nameEn": "M&M's",
+      "company": "Mars",
+      "industry": "candy",
+      "country": "آمریکا",
+      "productLines": [
+        "اسمارتیز",
+        "شکلات"
+      ]
+    },
+    {
+      "name": "منتوس",
+      "nameEn": "Mentos",
+      "company": "Perfetti Van Melle",
+      "industry": "candy",
+      "country": "دانمارک",
+      "productLines": [
+        "آبنبات",
+        "آدامس"
+      ]
+    },
+    {
+      "name": "روشن",
+      "nameEn": "Roshen",
+      "company": "Roshen",
+      "industry": "candy",
+      "country": "اوکراین",
+      "productLines": [
+        "شکلات",
+        "ویفر",
+        "آبنبات"
+      ]
+    },
+    {
+      "name": "ویتانا",
+      "nameEn": "Vitana",
+      "company": "ویتانا",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "بیسکویت مادر",
+        "بیسکویت ساقه طلایی",
+        "بیسکویت کرم‌دار",
+        "ویفر"
+      ]
+    },
+    {
+      "name": "گرجی",
+      "nameEn": "Gorji",
+      "company": "گرجی",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "بیسکویت",
+        "ویفر",
+        "شکلات",
+        "کوکی شکلاتی",
+        "بیسکو پلاس"
+      ]
+    },
+    {
+      "name": "نادی",
+      "nameEn": "Nadi",
+      "company": "صنایع غذایی نادی",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "کیک",
+        "کلوچه",
+        "ویفر",
+        "بیسکویت",
+        "کراکر",
+        "کاپ‌کیک",
+        "کیک لایه‌ای"
+      ]
+    },
+    {
+      "name": "دُرنا",
+      "nameEn": "Dorna",
+      "company": "دُرنا",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "کیک گلدن",
+        "درنابرگر",
+        "کیک لایه‌ای",
+        "کاپ‌کیک",
+        "کیک رول"
+      ]
+    },
+    {
+      "name": "شیرین ناب باختر",
+      "nameEn": "Shirin Nab Bakhtar",
+      "company": "شیرین ناب باختر (افو، ماهک، عسل طلا)",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "بیسکویت کرم‌دار",
+        "چوب‌شور",
+        "کیک",
+        "ویفر"
+      ]
+    },
+    {
+      "name": "زرکام",
+      "nameEn": "Zarkam",
+      "company": "گروه زر (هپیتو، چوکوتریپس)",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "بیسکویت",
+        "شکلات",
+        "تافی"
+      ]
+    },
+    {
+      "name": "کیمیا سلامت",
+      "nameEn": "Kimiya Salamat",
+      "company": "کیمیا سلامت (آذرلیما، شارونا)",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "کیک",
+        "کلوچه",
+        "ویفر"
+      ]
+    },
+    {
+      "name": "حلوای کویر یزد",
+      "nameEn": "Halva Kavir Yazd",
+      "company": "حلوای کویر یزد (فرجامی، پیکوک، تندرست)",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "بیسکویت",
+        "بیسکویت کرم‌دار",
+        "ویفر",
+        "شوکو ویفر",
+        "حاجی بادام"
+      ]
+    },
+    {
+      "name": "لوکر",
+      "nameEn": "Loacker",
+      "company": "Loacker",
+      "industry": "biscuit",
+      "country": "ایتالیا",
+      "productLines": [
+        "ویفر"
+      ]
+    },
+    {
+      "name": "جاکوبسنس",
+      "nameEn": "Jacobsens",
+      "company": "Jacobsens",
+      "industry": "biscuit",
+      "country": "دانمارک",
+      "productLines": [
+        "بیسکویت"
+      ]
+    },
+    {
+      "name": "لیبنیتز",
+      "nameEn": "Leibniz",
+      "company": "Bahlsen",
+      "industry": "biscuit",
+      "country": "آلمان",
+      "productLines": [
+        "بیسکویت"
+      ]
+    },
+    {
+      "name": "بالوکو",
+      "nameEn": "Balocco",
+      "company": "Balocco",
+      "industry": "biscuit",
+      "country": "ایتالیا",
+      "productLines": [
+        "بیسکویت غلات"
+      ]
+    },
+    {
+      "name": "اولکر",
+      "nameEn": "Ulker",
+      "company": "Yildiz Holding",
+      "industry": "biscuit",
+      "country": "ایران",
+      "productLines": [
+        "اسنک",
+        "چیپس",
+        "پفک",
+        "بیسکویت",
+        "ویفر",
+        "شکلات",
+        "تافی",
+        "آبنبات",
+        "کیک"
+      ]
+    },
+    {
+      "name": "بایودنت",
+      "nameEn": "Biodent",
+      "company": "صنایع غذایی ماسترفوده (گلرنگ)",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس بدون قند",
+        "آدامس ضد پوسیدگی"
+      ]
+    },
+    {
+      "name": "اکشن",
+      "nameEn": "Action",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس بدون قند",
+        "آدامس بادکنکی"
+      ]
+    },
+    {
+      "name": "رنکس",
+      "nameEn": "Renks",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "نیچردنت",
+      "nameEn": "Naturedent",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "دکتربن",
+      "nameEn": "Dr. Ben",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "تینتن",
+      "nameEn": "Tinten",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "آرمسترانگ",
+      "nameEn": "Armstrong",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "بینگو",
+      "nameEn": "Bingo",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "سانتین",
+      "nameEn": "Santin",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "مادلین",
+      "nameEn": "Madelin",
+      "company": "ماسترفوده",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "ایران زاک",
+      "nameEn": "Iran Zak",
+      "company": "ایران زاک",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس",
+        "آدامس میخک",
+        "آدامس اینا"
+      ]
+    },
+    {
+      "name": "شیک",
+      "nameEn": "Shik",
+      "company": "شیک",
+      "industry": "gum",
+      "country": "ایران",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "تریدنت",
+      "nameEn": "Trident",
+      "company": "Mondelez",
+      "industry": "gum",
+      "country": "آمریکا",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "فایو",
+      "nameEn": "Five",
+      "company": "Wrigley",
+      "industry": "gum",
+      "country": "آمریکا",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "ویویدنت",
+      "nameEn": "Vivident",
+      "company": "Yıldız Holding",
+      "industry": "gum",
+      "country": "ترکیه",
+      "productLines": [
+        "آدامس"
+      ]
+    },
+    {
+      "name": "بیگ بال",
+      "nameEn": "Big Babol",
+      "company": "Perfetti Van Melle",
+      "industry": "gum",
+      "country": "ترکیه",
+      "productLines": [
+        "آدامس بادکنکی"
+      ]
+    }
+  ]
+}

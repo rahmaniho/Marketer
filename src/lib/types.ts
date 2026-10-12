@@ -11,7 +11,7 @@ export type LicenseStatus = 'valid' | 'expiring' | 'pending' | 'expired';
 
 export type LicenseKind = 'IRC' | 'وزارت بهداشت' | 'حلال' | 'ارگانیک' | 'استاندارد';
 
-/** صنعت فعالیت برند/تأمین‌کننده — ماژول شوینده و بهداشتی + ماژول کالاهای مصرفی */
+/** صنعت فعالیت برند/تأمین‌کننده — ماژول شوینده و بهداشتی + کالاهای مصرفی + تنقلات */
 export type Industry =
   | 'food'
   | 'detergent'
@@ -24,10 +24,18 @@ export type Industry =
   | 'kitchenware'
   | 'pet_supply'
   | 'seasonal'
-  | 'household';
+  | 'household'
+  | 'chips'
+  | 'puffs'
+  | 'snacks'
+  | 'chocolate'
+  | 'candy'
+  | 'biscuit'
+  | 'wafer'
+  | 'gum';
 
 /** ماژول‌های کاتالوگ پلتفرم (قابل فعال/غیرفعال با Feature Flag) */
-export type ModuleKey = 'food' | 'detergent' | 'hygiene' | 'misc';
+export type ModuleKey = 'food' | 'detergent' | 'hygiene' | 'misc' | 'snacks';
 
 export type PackagingKind =
   | 'بطری'
@@ -76,6 +84,29 @@ export interface MiscSpec {
   /** نام فصل: نوروز، رمضان، بازگشایی مدارس، تابستان، زمستان */
   seasonName?: SeasonName;
   /** گواهی‌ها: استاندارد ملی، CE، مجوز دامپزشکی و … */
+  certification?: string[];
+}
+
+/**
+ * ویژگی‌های تخصصی ماژول «تنقلات»
+ * (چیپس، پفک، اسنک، شکلات، تافی، آبنبات، بیسکویت، ویفر، کیک، آدامس)
+ */
+export interface SnackSpec {
+  /** طعم: نمکی، پنیری، سرکه، BBQ، کچاپ، پیتزا، میوه‌ای، شکلاتی و … */
+  flavor?: string;
+  /** وزن (گرم) */
+  weightGr?: number;
+  /** نوع بسته‌بندی فروش */
+  packaging?: 'بسته' | 'کارتن' | 'شرینک';
+  /** گروه سنی */
+  ageGroup?: 'کودک' | 'بزرگسال' | 'همه';
+  /** بدون قند */
+  isSugarFree?: boolean;
+  /** روکش شکلاتی */
+  isChocolateCoated?: boolean;
+  /** فصلی (نوروز، بازگشایی مدارس، رمضان) */
+  isSeasonal?: boolean;
+  /** گواهی‌ها: حلال، استاندارد ملی، بهداشت و … */
   certification?: string[];
 }
 
@@ -207,7 +238,8 @@ export type ProductBadge =
   | 'best-price'
   | 'seasonal'
   | 'economy'
-  | 'premium';
+  | 'premium'
+  | 'sugar-free';
 
 export interface Product {
   id: string;
@@ -222,6 +254,8 @@ export interface Product {
   dh?: DetergentHygieneSpec;
   /** ویژگی‌های تخصصی کالاهای مصرفی سوپرمارکتی (فقط برای محصولات آن ماژول) */
   misc?: MiscSpec;
+  /** ویژگی‌های تخصصی تنقلات (فقط برای محصولات ماژول تنقلات) */
+  snacks?: SnackSpec;
   barcode: string;
   sku: string;
   /** واحد فروش عمده */
@@ -351,6 +385,8 @@ export interface ModuleFlags {
   hygiene: boolean;
   /** ماژول «سایر کالاهای مصرفی سوپرمارکتی» */
   misc: boolean;
+  /** ماژول «تنقلات» */
+  snacks: boolean;
 }
 
 export type CustomerTier = 'A' | 'B' | 'C' | 'VIP';

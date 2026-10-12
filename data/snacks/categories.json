@@ -1,0 +1,340 @@
+{
+  "roots": [
+    {
+      "id": "sn-c-chips",
+      "name": "چیپس و پفک",
+      "nameEn": "Chips & Puffs",
+      "icon": "chips",
+      "color": "#f59e0b",
+      "description": "ماژول تنقلات — شاخه چیپس و پفک با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-snack",
+      "name": "اسنک و کرانچی",
+      "nameEn": "Snacks & Crunchy",
+      "icon": "nut",
+      "color": "#ef4444",
+      "description": "ماژول تنقلات — شاخه اسنک و کرانچی با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-pop",
+      "name": "پاپ‌کورن و غلات حجیم‌شده",
+      "nameEn": "Popcorn & Puffed Grains",
+      "icon": "wheat",
+      "color": "#eab308",
+      "description": "ماژول تنقلات — شاخه پاپ‌کورن و غلات حجیم‌شده با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-choc",
+      "name": "شکلات و تافی",
+      "nameEn": "Chocolate & Toffee",
+      "icon": "cake",
+      "color": "#92400e",
+      "description": "ماژول تنقلات — شاخه شکلات و تافی با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-candy",
+      "name": "آبنبات و پاستیل",
+      "nameEn": "Candy & Gummy",
+      "icon": "candy",
+      "color": "#ec4899",
+      "description": "ماژول تنقلات — شاخه آبنبات و پاستیل با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-bisc",
+      "name": "بیسکویت و ویفر",
+      "nameEn": "Biscuits & Wafers",
+      "icon": "cookie",
+      "color": "#d97706",
+      "description": "ماژول تنقلات — شاخه بیسکویت و ویفر با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-cake",
+      "name": "کیک و کلوچه",
+      "nameEn": "Cakes & Cookies",
+      "icon": "pie",
+      "color": "#b45309",
+      "description": "ماژول تنقلات — شاخه کیک و کلوچه با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "sn-c-gum",
+      "name": "آدامس",
+      "nameEn": "Chewing Gum",
+      "icon": "leaf",
+      "color": "#14b8a6",
+      "description": "ماژول تنقلات — شاخه آدامس با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    }
+  ],
+  "children": [
+    {
+      "id": "sn-c-chips-plain",
+      "parentId": "sn-c-chips",
+      "name": "چیپس ساده",
+      "nameEn": "Plain Chips",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته چیپس ساده در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-chips-wave",
+      "parentId": "sn-c-chips",
+      "name": "چیپس موج‌دار",
+      "nameEn": "Ridged Chips",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته چیپس موج‌دار در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-chips-corn",
+      "parentId": "sn-c-chips",
+      "name": "چیپس ذرت",
+      "nameEn": "Corn Chips",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته چیپس ذرت در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-chips-puff",
+      "parentId": "sn-c-chips",
+      "name": "پفک نمکی و فرمی",
+      "nameEn": "Puffs",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته پفک نمکی و فرمی در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-snack-crunch",
+      "parentId": "sn-c-snack",
+      "name": "کرانچی",
+      "nameEn": "Crunchy",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته کرانچی در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-snack-nik",
+      "parentId": "sn-c-snack",
+      "name": "نیک‌ناک",
+      "nameEn": "Nik Nak",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته نیک‌ناک در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-snack-nut",
+      "parentId": "sn-c-snack",
+      "name": "اسنک بادام زمینی",
+      "nameEn": "Peanut Snacks",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته اسنک بادام زمینی در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-snack-stick",
+      "parentId": "sn-c-snack",
+      "name": "اسنک استیک",
+      "nameEn": "Snack Sticks",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته اسنک استیک در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-snack-grain",
+      "parentId": "sn-c-snack",
+      "name": "اسنک غلات",
+      "nameEn": "Grain Snacks",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته اسنک غلات در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-pop-salt",
+      "parentId": "sn-c-pop",
+      "name": "پاپ‌کورن نمکی",
+      "nameEn": "Salted Popcorn",
+      "icon": "package",
+      "color": "#eab308",
+      "description": "زیردسته پاپ‌کورن نمکی در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-pop-butter",
+      "parentId": "sn-c-pop",
+      "name": "پاپ‌کورن کره‌ای",
+      "nameEn": "Butter Popcorn",
+      "icon": "package",
+      "color": "#eab308",
+      "description": "زیردسته پاپ‌کورن کره‌ای در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-pop-choc",
+      "parentId": "sn-c-pop",
+      "name": "پاپ‌کورن شکلاتی",
+      "nameEn": "Chocolate Popcorn",
+      "icon": "package",
+      "color": "#eab308",
+      "description": "زیردسته پاپ‌کورن شکلاتی در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-pop-grain",
+      "parentId": "sn-c-pop",
+      "name": "غله حجیم‌شده",
+      "nameEn": "Puffed Grains",
+      "icon": "package",
+      "color": "#eab308",
+      "description": "زیردسته غله حجیم‌شده در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-choc-bar",
+      "parentId": "sn-c-choc",
+      "name": "شکلات تخته‌ای",
+      "nameEn": "Chocolate Bars",
+      "icon": "package",
+      "color": "#92400e",
+      "description": "زیردسته شکلات تخته‌ای در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-choc-nut",
+      "parentId": "sn-c-choc",
+      "name": "شکلات مغزدار",
+      "nameEn": "Filled Chocolate",
+      "icon": "package",
+      "color": "#92400e",
+      "description": "زیردسته شکلات مغزدار در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-choc-dark",
+      "parentId": "sn-c-choc",
+      "name": "شکلات تلخ",
+      "nameEn": "Dark Chocolate",
+      "icon": "package",
+      "color": "#92400e",
+      "description": "زیردسته شکلات تلخ در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-choc-break",
+      "parentId": "sn-c-choc",
+      "name": "شکلات صبحانه",
+      "nameEn": "Spread & Breakfast",
+      "icon": "package",
+      "color": "#92400e",
+      "description": "زیردسته شکلات صبحانه در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-choc-toffee",
+      "parentId": "sn-c-choc",
+      "name": "تافی و کارامل",
+      "nameEn": "Toffee & Caramel",
+      "icon": "package",
+      "color": "#92400e",
+      "description": "زیردسته تافی و کارامل در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-candy-fruit",
+      "parentId": "sn-c-candy",
+      "name": "آبنبات میوه‌ای",
+      "nameEn": "Fruit Candy",
+      "icon": "package",
+      "color": "#ec4899",
+      "description": "زیردسته آبنبات میوه‌ای در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-candy-gummy",
+      "parentId": "sn-c-candy",
+      "name": "پاستیل",
+      "nameEn": "Gummy",
+      "icon": "package",
+      "color": "#ec4899",
+      "description": "زیردسته پاستیل در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-candy-drag",
+      "parentId": "sn-c-candy",
+      "name": "دراژه و اسمارتیز",
+      "nameEn": "Dragées",
+      "icon": "package",
+      "color": "#ec4899",
+      "description": "زیردسته دراژه و اسمارتیز در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-bisc-plain",
+      "parentId": "sn-c-bisc",
+      "name": "بیسکویت ساده",
+      "nameEn": "Plain Biscuits",
+      "icon": "package",
+      "color": "#d97706",
+      "description": "زیردسته بیسکویت ساده در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-bisc-cream",
+      "parentId": "sn-c-bisc",
+      "name": "بیسکویت کرم‌دار",
+      "nameEn": "Cream Biscuits",
+      "icon": "package",
+      "color": "#d97706",
+      "description": "زیردسته بیسکویت کرم‌دار در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-bisc-wafer",
+      "parentId": "sn-c-bisc",
+      "name": "ویفر",
+      "nameEn": "Wafers",
+      "icon": "package",
+      "color": "#d97706",
+      "description": "زیردسته ویفر در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-bisc-cracker",
+      "parentId": "sn-c-bisc",
+      "name": "کراکر و چوب‌شور",
+      "nameEn": "Crackers",
+      "icon": "package",
+      "color": "#d97706",
+      "description": "زیردسته کراکر و چوب‌شور در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-cake-layer",
+      "parentId": "sn-c-cake",
+      "name": "کیک لایه‌ای",
+      "nameEn": "Layer Cakes",
+      "icon": "package",
+      "color": "#b45309",
+      "description": "زیردسته کیک لایه‌ای در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-cake-cookie",
+      "parentId": "sn-c-cake",
+      "name": "کلوچه",
+      "nameEn": "Cookies",
+      "icon": "package",
+      "color": "#b45309",
+      "description": "زیردسته کلوچه در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-gum-sugar",
+      "parentId": "sn-c-gum",
+      "name": "آدامس بدون قند",
+      "nameEn": "Sugar-free Gum",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته آدامس بدون قند در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-gum-balloon",
+      "parentId": "sn-c-gum",
+      "name": "آدامس بادکنکی",
+      "nameEn": "Bubble Gum",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته آدامس بادکنکی در ماژول تنقلات."
+    },
+    {
+      "id": "sn-c-gum-mint",
+      "parentId": "sn-c-gum",
+      "name": "آدامس نعنایی",
+      "nameEn": "Mint Gum",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته آدامس نعنایی در ماژول تنقلات."
+    }
+  ]
+}

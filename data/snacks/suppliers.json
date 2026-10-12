@@ -1,0 +1,135 @@
+{
+  "suppliers": [
+    {
+      "id": "sn-s-001",
+      "name": "پخش چیپس و اسنک آریا",
+      "supplierType": "chips",
+      "country": "ایران",
+      "contactName": "مهدی رضایی",
+      "phone": "021-55441122",
+      "email": "info@aryasnack.ir",
+      "paymentTerms": "اعتباری ۳۰ روزه",
+      "leadTimeDays": 2,
+      "rating": 4.5,
+      "brandNames": [
+        "مزمز",
+        "چی‌توز",
+        "چاکلز",
+        "دینا",
+        "مینو"
+      ],
+      "monthlyVolume": 14000,
+      "fillRate": 97,
+      "notes": "پخش تخصصی چیپس، پفک و اسنک در تهران و شهرستان."
+    },
+    {
+      "id": "sn-s-002",
+      "name": "شکلات‌پخش سراسری",
+      "supplierType": "chocolate",
+      "country": "ایران",
+      "contactName": "حسین موسوی",
+      "phone": "021-88223344",
+      "email": "sales@chocolatpakhsh.ir",
+      "paymentTerms": "نقدی (۳٪ تخفیف)",
+      "leadTimeDays": 3,
+      "rating": 4.4,
+      "brandNames": [
+        "شونیز",
+        "پارمیدا",
+        "باراکا",
+        "فرمند",
+        "آیدین"
+      ],
+      "monthlyVolume": 9200,
+      "fillRate": 94,
+      "notes": "مرجع پخش شکلات، تافی و آبنبات."
+    },
+    {
+      "id": "sn-s-003",
+      "name": "بیسکویت و کیک غرب",
+      "supplierType": "biscuit",
+      "country": "ایران",
+      "contactName": "سعید کریمی",
+      "phone": "031-34445566",
+      "email": "order@biscuitgharb.ir",
+      "paymentTerms": "چک ۶۰ روزه",
+      "leadTimeDays": 3,
+      "rating": 4.3,
+      "brandNames": [
+        "ویتانا",
+        "گرجی",
+        "نادی",
+        "دُرنا",
+        "شیرین وطن"
+      ],
+      "monthlyVolume": 7800,
+      "fillRate": 92,
+      "notes": "توزیع بیسکویت، ویفر و کیک اصفهان."
+    },
+    {
+      "id": "sn-s-004",
+      "name": "آدامس‌پخش ماسترفوده",
+      "supplierType": "gum",
+      "country": "ایران",
+      "contactName": "رضا صادقی",
+      "phone": "021-77665544",
+      "email": "info@gumpakhsh.ir",
+      "paymentTerms": "اعتباری ۴۵ روزه",
+      "leadTimeDays": 2,
+      "rating": 4.6,
+      "brandNames": [
+        "بایودنت",
+        "اکشن",
+        "رنکس",
+        "نیچردنت",
+        "دکتربن"
+      ],
+      "monthlyVolume": 11000,
+      "fillRate": 96,
+      "notes": "پخش آدامس و خوشبوکننده."
+    },
+    {
+      "id": "sn-s-005",
+      "name": "تنقلات کودک بهاران",
+      "supplierType": "candy",
+      "country": "ایران",
+      "contactName": "مریم اکبری",
+      "phone": "031-11223344",
+      "email": "info@kidssnack.ir",
+      "paymentTerms": "نقدی",
+      "leadTimeDays": 3,
+      "rating": 4.2,
+      "brandNames": [
+        "حلاوت پردیس",
+        "شیرین وطن",
+        "منتوس",
+        "ام اند ام"
+      ],
+      "monthlyVolume": 6400,
+      "fillRate": 91,
+      "notes": "تأمین پاستیل، آبنبات و دراژه برای سوپرمارکت و بوفه."
+    },
+    {
+      "id": "sn-s-006",
+      "name": "اسنک و پاپ‌کورن شهاب",
+      "supplierType": "snacks",
+      "country": "ایران",
+      "contactName": "امیرحسین گودرزی",
+      "phone": "021-44332211",
+      "email": "sales@snackshahab.ir",
+      "paymentTerms": "اعتباری ۳۰ روزه",
+      "leadTimeDays": 2,
+      "rating": 4.4,
+      "brandNames": [
+        "تاپیس",
+        "لینا",
+        "لی لی ناز",
+        "پف‌استار",
+        "وی‌نیتو"
+      ],
+      "monthlyVolume": 8100,
+      "fillRate": 95,
+      "notes": "پخش اسنک، پاپ‌کورن و غلات حجیم‌شده."
+    }
+  ]
+}

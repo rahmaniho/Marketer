@@ -253,6 +253,7 @@ export const settings: Settings = {
     detergent: true,
     hygiene: true,
     misc: true,
+    snacks: true,
   },
 };
 
