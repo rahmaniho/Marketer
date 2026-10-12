@@ -98,6 +98,36 @@ const SettingsAdmin = () => {
             <Switch checked={draft.enableSmsMock} onChange={(v) => patch({ enableSmsMock: v })} label="پیامک نمایشی" description="ارسال پیامک شبیه‌سازی‌شده بدون اتصال به پنل پیامکی" />
             <Switch checked={draft.enableModian} onChange={(v) => patch({ enableModian: v })} label="اتصال به سامانه مودیان" description="ارسال صورتحساب الکترونیکی (شبیه‌سازی)" />
           </Card>
+
+          <Card className="space-y-3">
+            <SectionTitle title="ماژول‌های کاتالوگ (Feature Flags)" icon="spray" />
+            <p className="text-[11px] leading-relaxed text-ink-500">
+              ماژول شوینده و بهداشتی (کارن سافت) به‌صورت مستقل قابل فعال/غیرفعال است. با غیرفعال شدن هر ماژول، محصولات، برندها و آفرهای همان بخش از
+              کل پلتفرم پنهان می‌شوند. مدیریت کامل ماژول در{' '}
+              <a href="#/admin/dh" className="font-bold text-brand-600 hover:underline">
+                پنل ماژول شوینده و بهداشتی
+              </a>{' '}
+              موجود است.
+            </p>
+            <Switch
+              checked={draft.modules?.food ?? true}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true }), food: v } })}
+              label="ماژول غذایی"
+              description="کاتالوگ اصلی مواد غذایی بازارعمده"
+            />
+            <Switch
+              checked={draft.modules?.detergent ?? true}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true }), detergent: v } })}
+              label="ماژول شوینده و پاک‌کننده"
+              description="پودر و مایع لباسشویی/ظرفشویی، سفیدکننده، جرم‌گیر و ملزومات خانه"
+            />
+            <Switch
+              checked={draft.modules?.hygiene ?? true}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true }), hygiene: v } })}
+              label="ماژول بهداشتی و آرایشی"
+              description="صابون، شامپو، بهداشت دهان، سلولزی، بهداشت بانوان و کودک"
+            />
+          </Card>
         </div>
       )}
 

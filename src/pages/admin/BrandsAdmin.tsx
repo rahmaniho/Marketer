@@ -63,6 +63,7 @@ const BrandsAdmin = () => {
     slug: '',
     country: 'ایران',
     origin: 'iran',
+    industry: 'food',
     categoryIds: [rootCategories[0].id],
     productLines: [],
     description: '',

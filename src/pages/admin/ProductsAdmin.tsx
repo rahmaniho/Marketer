@@ -66,6 +66,7 @@ const ProductsAdmin = () => {
     nameEn: '',
     brandId: brands[0]?.id ?? '',
     categoryId: rootCategories[0].id,
+    module: 'food',
     barcode: '6260000000000',
     sku: 'NEW-1000',
     unit: 'کارتن',
