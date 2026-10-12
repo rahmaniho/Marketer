@@ -12,6 +12,7 @@ import { categoryById, categoryPath } from '@/data/categories';
 import { faNum, jalaliDate, percentFa, toEnDigits, toman, tomanShort, daysUntil } from '@/lib/format';
 import { contracts as mockContracts } from '@/data/crm';
 import { productsByBrand } from '@/data/products';
+import { PerUnitPrices, SpecChips, SpecGrid, nextTierNudge } from '@/modules/dh';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -435,6 +436,35 @@ const ProductDetail = () => {
                       <span className="num text-left font-semibold">{v}</span>
                     </div>
                   ))}
+                </div>
+              )}
+
+              {tab === 'specs' && product.dh && (
+                <div className="mt-5 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="flex items-center gap-1.5 text-[13px] font-extrabold text-ink-800 dark:text-ink-100">
+                      <Icon name="spray" className="h-4 w-4 text-sky-500" />
+                      مشخصات تخصصی شوینده و بهداشتی
+                    </h3>
+                    <SpecChips product={product} max={4} />
+                  </div>
+                  <SpecGrid product={product} />
+                  {product.dh.safety && product.dh.safety !== '—' && (
+                    <div className="flex items-start gap-2 rounded-xl border border-amber-200 bg-amber-50 p-3 text-[11px] leading-relaxed text-amber-800 dark:border-amber-900 dark:bg-amber-900/20 dark:text-amber-200">
+                      <Icon name="alert" className="mt-0.5 h-4 w-4 flex-none" />
+                      <span>
+                        <span className="font-extrabold">هشدار ایمنی: </span>
+                        {product.dh.safety}
+                      </span>
+                    </div>
+                  )}
+                  <PerUnitPrices product={product} />
+                  {nextTierNudge(product, qty, useStore.getState().settings) && (
+                    <div className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-[11.5px] font-bold text-emerald-800 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
+                      <Icon name="trendingDown" className="h-4 w-4 flex-none" />
+                      {nextTierNudge(product, qty, useStore.getState().settings)!.message}
+                    </div>
+                  )}
                 </div>
               )}
 
