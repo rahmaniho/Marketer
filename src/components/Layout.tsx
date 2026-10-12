@@ -122,6 +122,8 @@ export const CustomerLayout = () => {
   const wallet = toman(customer?.walletBalance ?? 0);
   // Feature Flag ماژول شوینده و بهداشتی (کارن سافت)
   const dhEnabled = (settings.modules?.detergent ?? true) || (settings.modules?.hygiene ?? true);
+  // Feature Flag ماژول سایر کالاهای مصرفی سوپرمارکتی (کارن سافت)
+  const miscEnabled = settings.modules?.misc ?? true;
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -215,6 +217,7 @@ export const CustomerLayout = () => {
             <NavItem to="/" label="خانه" icon="home" />
             <NavItem to="/catalog" label="کاتالوگ کالا" icon="grid" />
             {dhEnabled && <NavItem to="/dh" label="شوینده و بهداشتی" icon="spray" />}
+            {miscEnabled && <NavItem to="/misc" label="کالاهای مصرفی" icon="box" />}
             <NavItem to="/brands" label="برندها" icon="badge" />
             <NavItem to="/categories" label="دسته‌بندی‌ها" icon="layers" />
             <NavItem to="/offers" label="آفرها و کمپین‌ها" icon="tag" />
@@ -237,6 +240,7 @@ export const CustomerLayout = () => {
               ['/', 'خانه', 'home'],
               ['/catalog', 'کاتالوگ کالا', 'grid'],
               ...(dhEnabled ? [['/dh', 'شوینده و بهداشتی', 'spray']] : []),
+              ...(miscEnabled ? [['/misc', 'کالاهای مصرفی', 'box']] : []),
               ['/brands', 'برندها', 'badge'],
               ['/categories', 'دسته‌بندی‌ها', 'layers'],
               ['/offers', 'آفرها', 'tag'],
@@ -451,6 +455,7 @@ const ADMIN_NAV: { group: string; items: [string, string, string][] }[] = [
       ['/admin/products', 'مدیریت محصولات', 'grid'],
       ['/admin/brands', 'مدیریت برندها', 'badge'],
       ['/admin/dh', 'ماژول شوینده و بهداشتی', 'spray'],
+      ['/admin/misc', 'ماژول کالاهای مصرفی', 'box'],
       ['/admin/warehouse', 'انبار، بچ و موجودی', 'warehouse'],
       ['/admin/suppliers', 'تأمین‌کنندگان', 'truck'],
       ['/admin/logistics', 'حمل، مسیر و POD', 'route'],

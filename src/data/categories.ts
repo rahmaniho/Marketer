@@ -1,10 +1,12 @@
 import type { Category } from '@/lib/types';
 import { dhCategories } from '@/modules/dh/data';
+import { msCategories } from '@/modules/misc/data';
 
 /**
  * درخت دسته‌بندی محصولات (دوسطحی)
  * icon = نام آیکون در نقشه آیکون‌های اپ
- * دسته‌های ماژول شوینده و بهداشتی از /data/detergent/ و /data/hygiene/ بارگذاری می‌شوند.
+ * دسته‌های ماژول شوینده و بهداشتی از /data/detergent/ و /data/hygiene/ و
+ * دسته‌های ماژول کالاهای مصرفی از /data/misc/ بارگذاری می‌شوند.
  */
 export const categories: Category[] = [
   // ---------- ریشه‌ها ----------
@@ -90,6 +92,9 @@ export const categories: Category[] = [
 
   // ---------- ماژول شوینده و بهداشتی (کارن سافت) ----------
   ...dhCategories,
+
+  // ---------- ماژول سایر کالاهای مصرفی سوپرمارکتی (کارن سافت) ----------
+  ...msCategories,
 ];
 
 export const categoryById = (id: string) => categories.find((c) => c.id === id);

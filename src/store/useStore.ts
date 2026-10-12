@@ -25,6 +25,7 @@ import { products as mockProducts } from '@/data/products';
 import { brands as mockBrands } from '@/data/brands';
 import { offers as mockOffers } from '@/data/offers';
 import { dhBrands, dhCompliance, dhOffers, dhProducts } from '@/modules/dh/data';
+import { msBrands, msCompliance, msOffers, msProducts } from '@/modules/misc/data';
 import { customers as mockCustomers, orders as mockOrders } from '@/data/ops';
 import { contracts as mockContracts } from '@/data/crm';
 import { settings as defaultSettings } from '@/data/content';
@@ -568,19 +569,31 @@ export const useStore = create<StoreState>()(
 export const isModuleEnabled = (settings: Settings | undefined | null, module: ModuleKey): boolean => {
   const m = settings?.modules;
   if (!m) return true;
-  return module === 'food' ? m.food : module === 'detergent' ? m.detergent : m.hygiene;
+  switch (module) {
+    case 'food':
+      return m.food ?? true;
+    case 'detergent':
+      return m.detergent ?? true;
+    case 'hygiene':
+      return m.hygiene ?? true;
+    default:
+      return m.misc ?? true;
+  }
 };
 
 /**
  * یافتن محصول — بدون فیلتر Feature Flag (برای سبد خرید و سوابق سفارش)
- * محصولات ماژول شوینده و بهداشتی هم جست‌وجو می‌شوند.
+ * محصولات همه ماژول‌ها (شوینده، بهداشتی، کالاهای مصرفی) جست‌وجو می‌شوند.
  */
 export const findProduct = (state: Pick<StoreState, 'productEdits'>, id: string): Product | undefined =>
-  state.productEdits[id] ?? mockProducts.find((p) => p.id === id) ?? dhProducts.find((p) => p.id === id);
+  state.productEdits[id] ??
+  mockProducts.find((p) => p.id === id) ??
+  dhProducts.find((p) => p.id === id) ??
+  msProducts.find((p) => p.id === id);
 
 export const allProducts = (state: Pick<StoreState, 'productEdits' | 'deletedProductIds' | 'settings'>): Product[] => {
   const editedIds = new Set(Object.keys(state.productEdits));
-  const base = [...mockProducts, ...dhProducts].filter(
+  const base = [...mockProducts, ...dhProducts, ...msProducts].filter(
     (p) => !state.deletedProductIds.includes(p.id) && !editedIds.has(p.id),
   );
   const edited = Object.values(state.productEdits).filter((p) => !state.deletedProductIds.includes(p.id));
@@ -589,31 +602,42 @@ export const allProducts = (state: Pick<StoreState, 'productEdits' | 'deletedPro
 
 export const allBrands = (state: Pick<StoreState, 'brandEdits' | 'settings'>): Brand[] => {
   const editedIds = new Set(Object.keys(state.brandEdits));
-  const merged = [...Object.values(state.brandEdits), ...mockBrands, ...dhBrands.filter((b) => !editedIds.has(b.id))];
+  const merged = [
+    ...Object.values(state.brandEdits),
+    ...mockBrands,
+    ...dhBrands.filter((b) => !editedIds.has(b.id)),
+    ...msBrands.filter((b) => !editedIds.has(b.id)),
+  ];
   return merged.filter((b) => {
     if (b.id.startsWith('dh-br-')) {
       const det = b.industry === 'detergent' || b.industry === 'mixed';
       const hyg = b.industry === 'hygiene' || b.industry === 'mixed';
       return (det && isModuleEnabled(state.settings, 'detergent')) || (hyg && isModuleEnabled(state.settings, 'hygiene'));
     }
+    if (b.id.startsWith('ms-br-')) return isModuleEnabled(state.settings, 'misc');
     return isModuleEnabled(state.settings, 'food');
   });
 };
 
 export const getAllOffers = (state: Pick<StoreState, 'offerEdits' | 'settings'>): Offer[] => {
   const editedIds = new Set(Object.keys(state.offerEdits));
-  const merged = [...Object.values(state.offerEdits), ...mockOffers, ...dhOffers.filter((o) => !editedIds.has(o.id))];
+  const merged = [...Object.values(state.offerEdits), ...mockOffers, ...dhOffers.filter((o) => !editedIds.has(o.id)), ...msOffers.filter((o) => !editedIds.has(o.id))];
   return merged.filter((o) => {
     if (o.id.startsWith('dho-')) return isModuleEnabled(state.settings, 'detergent');
     if (o.id.startsWith('hho-')) return isModuleEnabled(state.settings, 'hygiene');
+    if (o.id.startsWith('mso-')) return isModuleEnabled(state.settings, 'misc');
     return isModuleEnabled(state.settings, 'food');
   });
 };
 
-/** مجوزها و استانداردهای ماژول شوینده و بهداشتی (با امکان ویرایش ادمین) */
+/** مجوزها و استانداردها (با امکان ویرایش ادمین) — ماژول شوینده/بهداشتی + کالاهای مصرفی */
 export const allCompliance = (state: Pick<StoreState, 'complianceEdits'>): Compliance[] => {
   const editedIds = new Set(Object.keys(state.complianceEdits));
-  return [...Object.values(state.complianceEdits), ...dhCompliance.filter((c) => !editedIds.has(c.id))];
+  return [
+    ...Object.values(state.complianceEdits),
+    ...dhCompliance.filter((c) => !editedIds.has(c.id)),
+    ...msCompliance.filter((c) => !editedIds.has(c.id)),
+  ];
 };
 
 export const getActiveContract = (

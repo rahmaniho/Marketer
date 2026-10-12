@@ -7,6 +7,7 @@ import { useStore } from '@/store/useStore';
 import Home from '@/pages/Home';
 import Catalog from '@/pages/Catalog';
 import DetergentHygiene from '@/pages/DetergentHygiene';
+import MiscMarket from '@/pages/MiscMarket';
 import ProductDetail from '@/pages/ProductDetail';
 import Login from '@/pages/Login';
 import Cart from '@/pages/Cart';
@@ -61,6 +62,7 @@ const AdminIntegrations = lazy(() => import('@/pages/admin/IntegrationsAdmin'));
 const AdminCompliance = lazy(() => import('@/pages/admin/ComplianceAdmin'));
 const AdminSettings = lazy(() => import('@/pages/admin/SettingsAdmin'));
 const AdminDh = lazy(() => import('@/pages/admin/DhAdmin'));
+const AdminMisc = lazy(() => import('@/pages/admin/MiscAdmin'));
 
 const Loading = ({ label = 'در حال بارگذاری…' }: { label?: string }) => (
   <div className="flex min-h-[40vh] flex-col items-center justify-center gap-3 text-ink-400">
@@ -100,6 +102,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/dh" element={<DetergentHygiene />} />
+              <Route path="/misc" element={<MiscMarket />} />
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/brands" element={<Brands />} />
               <Route path="/brand/:id" element={<BrandDetail />} />
@@ -186,6 +189,7 @@ const App = () => {
               <Route path="integrations" element={<AdminIntegrations />} />
               <Route path="compliance" element={<AdminCompliance />} />
               <Route path="dh" element={<AdminDh />} />
+              <Route path="misc" element={<AdminMisc />} />
               <Route path="settings" element={<AdminSettings />} />
               <Route path="supplier-portal" element={<SupplierPortal />} />
             </Route>
