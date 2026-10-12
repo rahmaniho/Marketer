@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="بازارعمده — پلتفرم B2B عمده‌فروشی هوشمند مواد غذایی ایرانی و مجاز وارداتی. اتصال مستقیم تأمین‌کننده به سوپرمارکت، رستوران و عمده‌فروش. طراحی و توسعه: کارن سافت" />
+    <meta name="theme-color" content="#0f684c" />
+    <meta name="author" content="Karen Soft - کارن سافت" />
+    <meta property="og:title" content="بازارعمده | پلتفرم عمده‌فروشی هوشمند مواد غذایی" />
+    <meta property="og:description" content="خرید عمده مواد غذایی ایرانی و خارجی، مستقیم از تأمین‌کننده — دموی نمایشی، توسعه کارن سافت" />
+    <meta property="og:type" content="website" />
+    <title>بازارعمده | پلتفرم عمده‌فروشی هوشمند مواد غذایی — دمو</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="stylesheet" href="fonts/vazirmatn.css" />
+    <link rel="preload" href="fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      // اعمال تم قبل از رندر برای جلوگیری از پرش رنگ (FOUC)
+      (function () {
+        try {
+          var t = localStorage.getItem('marketer.theme');
+          var dark = t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
