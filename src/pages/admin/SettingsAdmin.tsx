@@ -111,21 +111,27 @@ const SettingsAdmin = () => {
             </p>
             <Switch
               checked={draft.modules?.food ?? true}
-              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true }), food: v } })}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true, misc: true }), food: v } })}
               label="ماژول غذایی"
               description="کاتالوگ اصلی مواد غذایی بازارعمده"
             />
             <Switch
               checked={draft.modules?.detergent ?? true}
-              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true }), detergent: v } })}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true, misc: true }), detergent: v } })}
               label="ماژول شوینده و پاک‌کننده"
               description="پودر و مایع لباسشویی/ظرفشویی، سفیدکننده، جرم‌گیر و ملزومات خانه"
             />
             <Switch
               checked={draft.modules?.hygiene ?? true}
-              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true }), hygiene: v } })}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true, misc: true }), hygiene: v } })}
               label="ماژول بهداشتی و آرایشی"
               description="صابون، شامپو، بهداشت دهان، سلولزی، بهداشت بانوان و کودک"
+            />
+            <Switch
+              checked={draft.modules?.misc ?? true}
+              onChange={(v) => patch({ modules: { ...(draft.modules ?? { food: true, detergent: true, hygiene: true, misc: true }), misc: v } })}
+              label="ماژول سایر کالاهای مصرفی سوپرمارکتی"
+              description="لوازم‌التحریر، باتری، لوازم جانبی موبایل، لوازم برقی کوچک، ظروف آشپزخانه، حیوانات خانگی، فصلی و ملزومات خانه"
             />
           </Card>
         </div>
