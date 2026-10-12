@@ -11,11 +11,23 @@ export type LicenseStatus = 'valid' | 'expiring' | 'pending' | 'expired';
 
 export type LicenseKind = 'IRC' | 'وزارت بهداشت' | 'حلال' | 'ارگانیک' | 'استاندارد';
 
-/** صنعت فعالیت برند/تأمین‌کننده — ماژول شوینده و بهداشتی */
-export type Industry = 'food' | 'detergent' | 'hygiene' | 'mixed';
+/** صنعت فعالیت برند/تأمین‌کننده — ماژول شوینده و بهداشتی + ماژول کالاهای مصرفی */
+export type Industry =
+  | 'food'
+  | 'detergent'
+  | 'hygiene'
+  | 'mixed'
+  | 'stationery'
+  | 'battery'
+  | 'mobile_accessory'
+  | 'home_appliance'
+  | 'kitchenware'
+  | 'pet_supply'
+  | 'seasonal'
+  | 'household';
 
 /** ماژول‌های کاتالوگ پلتفرم (قابل فعال/غیرفعال با Feature Flag) */
-export type ModuleKey = 'food' | 'detergent' | 'hygiene';
+export type ModuleKey = 'food' | 'detergent' | 'hygiene' | 'misc';
 
 export type PackagingKind =
   | 'بطری'
@@ -32,6 +44,40 @@ export type PackagingKind =
 
 /** نوع پوست برای محصولات بهداشتی */
 export type SkinType = 'normal' | 'خشک' | 'چرب' | 'مختلط' | 'حساس' | 'همه انواع';
+
+/** نام فصل برای محصولات فصلی و مناسبتی */
+export type SeasonName = 'نوروز' | 'رمضان' | 'بازگشایی مدارس' | 'تابستان' | 'زمستان';
+
+/**
+ * ویژگی‌های تخصصی ماژول «سایر کالاهای مصرفی سوپرمارکتی»
+ * (لوازم‌التحریر، باتری، لوازم جانبی موبایل، لوازم برقی، ظروف، حیوانات خانگی، فصلی، ملزومات خانه)
+ */
+export interface MiscSpec {
+  /** جنس / متریال */
+  material?: string;
+  /** ابعاد */
+  dimensions?: string;
+  /** وزن (گرم) — برای محاسبه هزینه ارسال */
+  weightGr?: number;
+  /** ولتاژ (لوازم برقی) */
+  voltage?: string;
+  /** توان مصرفی (لوازم برقی) */
+  wattage?: number;
+  /** ظرفیت */
+  capacity?: string;
+  /** سازگاری (لوازم جانبی موبایل) */
+  compatibility?: string;
+  /** نوع حیوان (محصولات حیوانات خانگی) */
+  animalType?: 'سگ' | 'گربه' | 'سگ و گربه';
+  /** گروه سنی (لوازم‌التحریر و غذای حیوانات) */
+  ageGroup?: 'کودک' | 'نوجوان' | 'بزرگسال' | 'عمومی';
+  /** فصلی بودن */
+  isSeasonal?: boolean;
+  /** نام فصل: نوروز، رمضان، بازگشایی مدارس، تابستان، زمستان */
+  seasonName?: SeasonName;
+  /** گواهی‌ها: استاندارد ملی، CE، مجوز دامپزشکی و … */
+  certification?: string[];
+}
 
 /**
  * ویژگی‌های تخصصی صنف شوینده و بهداشتی
@@ -158,7 +204,10 @@ export type ProductBadge =
   | 'child'
   | 'recyclable'
   | 'cruelty-free'
-  | 'best-price';
+  | 'best-price'
+  | 'seasonal'
+  | 'economy'
+  | 'premium';
 
 export interface Product {
   id: string;
@@ -171,6 +220,8 @@ export interface Product {
   module: ModuleKey;
   /** ویژگی‌های تخصصی شوینده و بهداشتی (فقط برای محصولات آن ماژول) */
   dh?: DetergentHygieneSpec;
+  /** ویژگی‌های تخصصی کالاهای مصرفی سوپرمارکتی (فقط برای محصولات آن ماژول) */
+  misc?: MiscSpec;
   barcode: string;
   sku: string;
   /** واحد فروش عمده */
@@ -256,7 +307,8 @@ export type ComplianceKind =
   | 'ارگانیک'
   | 'Cruelty-Free'
   | 'Child-safe'
-  | 'Recyclable';
+  | 'Recyclable'
+  | 'مجوز دامپزشکی';
 
 export interface Compliance {
   id: string;
@@ -297,6 +349,8 @@ export interface ModuleFlags {
   food: boolean;
   detergent: boolean;
   hygiene: boolean;
+  /** ماژول «سایر کالاهای مصرفی سوپرمارکتی» */
+  misc: boolean;
 }
 
 export type CustomerTier = 'A' | 'B' | 'C' | 'VIP';

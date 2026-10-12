@@ -1,0 +1,403 @@
+{
+  "roots": [
+    {
+      "id": "ms-c-sta",
+      "name": "لوازم‌التحریر و ملزومات اداری",
+      "nameEn": "Stationery & Office",
+      "icon": "paper",
+      "color": "#6366f1",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه لوازم‌التحریر و ملزومات اداری با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-bat",
+      "name": "باتری، فندک و لوازم جانبی کوچک",
+      "nameEn": "Batteries & Small Accessories",
+      "icon": "box",
+      "color": "#f59e0b",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه باتری، فندک و لوازم جانبی کوچک با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-mob",
+      "name": "لوازم جانبی موبایل",
+      "nameEn": "Mobile Accessories",
+      "icon": "phone",
+      "color": "#06b6d4",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه لوازم جانبی موبایل با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-app",
+      "name": "لوازم برقی کوچک خانگی",
+      "nameEn": "Small Home Appliances",
+      "icon": "zap",
+      "color": "#ef4444",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه لوازم برقی کوچک خانگی با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-kit",
+      "name": "ظروف و لوازم آشپزخانه (غیربرقی)",
+      "nameEn": "Kitchenware",
+      "icon": "bowl",
+      "color": "#10b981",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه ظروف و لوازم آشپزخانه (غیربرقی) با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-pet",
+      "name": "محصولات حیوانات خانگی",
+      "nameEn": "Pet Supplies",
+      "icon": "heart",
+      "color": "#f97316",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه محصولات حیوانات خانگی با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-sea",
+      "name": "محصولات فصلی و مناسبتی",
+      "nameEn": "Seasonal & Occasional",
+      "icon": "gift",
+      "color": "#a855f7",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه محصولات فصلی و مناسبتی با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    },
+    {
+      "id": "ms-c-hom",
+      "name": "ملزومات خانه و آشپزخانه (مصرفی)",
+      "nameEn": "Household Consumables",
+      "icon": "home",
+      "color": "#14b8a6",
+      "description": "ماژول کالاهای مصرفی سوپرمارکتی — شاخه ملزومات خانه و آشپزخانه (مصرفی) با برندهای ایرانی و خارجی و پله قیمتی عمده."
+    }
+  ],
+  "children": [
+    {
+      "id": "ms-c-sta-pen",
+      "parentId": "ms-c-sta",
+      "name": "خودکار و روان‌نویس",
+      "nameEn": "Pens",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته خودکار و روان‌نویس در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sta-pnc",
+      "parentId": "ms-c-sta",
+      "name": "مداد و مداد رنگی",
+      "nameEn": "Pencils",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته مداد و مداد رنگی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sta-acc",
+      "parentId": "ms-c-sta",
+      "name": "مدادتراش، پاک‌کن و لوازم تصحیح",
+      "nameEn": "Erasers & Sharpeners",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته مدادتراش، پاک‌کن و لوازم تصحیح در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sta-mrk",
+      "parentId": "ms-c-sta",
+      "name": "ماژیک و هایلایت",
+      "nameEn": "Markers",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته ماژیک و هایلایت در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sta-bok",
+      "parentId": "ms-c-sta",
+      "name": "دفتر و یادداشت",
+      "nameEn": "Notebooks",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته دفتر و یادداشت در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sta-pap",
+      "parentId": "ms-c-sta",
+      "name": "کاغذ و ملزومات اداری",
+      "nameEn": "Paper & Office",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته کاغذ و ملزومات اداری در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sta-bag",
+      "parentId": "ms-c-sta",
+      "name": "کیف و کوله",
+      "nameEn": "Bags & Backpacks",
+      "icon": "package",
+      "color": "#6366f1",
+      "description": "زیردسته کیف و کوله در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-bat-aa",
+      "parentId": "ms-c-bat",
+      "name": "باتری قلمی و نیم‌قلمی",
+      "nameEn": "AA & AAA Batteries",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته باتری قلمی و نیم‌قلمی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-bat-coin",
+      "parentId": "ms-c-bat",
+      "name": "باتری سکه‌ای و کتابی",
+      "nameEn": "Coin & 9V Batteries",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته باتری سکه‌ای و کتابی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-bat-charge",
+      "parentId": "ms-c-bat",
+      "name": "باتری شارژی و شارژر",
+      "nameEn": "Rechargeable & Chargers",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته باتری شارژی و شارژر در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-bat-light",
+      "parentId": "ms-c-bat",
+      "name": "فندک و چراغ‌قوه",
+      "nameEn": "Lighters & Flashlights",
+      "icon": "package",
+      "color": "#f59e0b",
+      "description": "زیردسته فندک و چراغ‌قوه در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-mob-charge",
+      "parentId": "ms-c-mob",
+      "name": "شارژر و کابل",
+      "nameEn": "Chargers & Cables",
+      "icon": "package",
+      "color": "#06b6d4",
+      "description": "زیردسته شارژر و کابل در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-mob-pow",
+      "parentId": "ms-c-mob",
+      "name": "پاوربانک",
+      "nameEn": "Power Banks",
+      "icon": "package",
+      "color": "#06b6d4",
+      "description": "زیردسته پاوربانک در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-mob-aud",
+      "parentId": "ms-c-mob",
+      "name": "هندزفری و هدفون",
+      "nameEn": "Headphones",
+      "icon": "package",
+      "color": "#06b6d4",
+      "description": "زیردسته هندزفری و هدفون در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-mob-case",
+      "parentId": "ms-c-mob",
+      "name": "قاب و گلس",
+      "nameEn": "Cases & Glass",
+      "icon": "package",
+      "color": "#06b6d4",
+      "description": "زیردسته قاب و گلس در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-mob-hold",
+      "parentId": "ms-c-mob",
+      "name": "هولدر و شارژر فندکی",
+      "nameEn": "Holders & Car Chargers",
+      "icon": "package",
+      "color": "#06b6d4",
+      "description": "زیردسته هولدر و شارژر فندکی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-app-hot",
+      "parentId": "ms-c-app",
+      "name": "کتری، چای‌ساز و پلوپز",
+      "nameEn": "Kettles & Rice Cookers",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته کتری، چای‌ساز و پلوپز در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-app-prep",
+      "parentId": "ms-c-app",
+      "name": "همزن، غذاساز و خردکن",
+      "nameEn": "Mixers & Food Processors",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته همزن، غذاساز و خردکن در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-app-clean",
+      "parentId": "ms-c-app",
+      "name": "جاروبرقی، جارو شارژی و بخارشو",
+      "nameEn": "Vacuums & Steam Cleaners",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته جاروبرقی، جارو شارژی و بخارشو در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-app-iron",
+      "parentId": "ms-c-app",
+      "name": "اتو و لباس‌شویی",
+      "nameEn": "Irons",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته اتو و لباس‌شویی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-app-heat",
+      "parentId": "ms-c-app",
+      "name": "پنکه، هیتر و تهویه",
+      "nameEn": "Fans & Heaters",
+      "icon": "package",
+      "color": "#ef4444",
+      "description": "زیردسته پنکه، هیتر و تهویه در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-kit-opal",
+      "parentId": "ms-c-kit",
+      "name": "ظروف اوپال و چینی",
+      "nameEn": "Opal & Porcelain",
+      "icon": "package",
+      "color": "#10b981",
+      "description": "زیردسته ظروف اوپال و چینی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-kit-pot",
+      "parentId": "ms-c-kit",
+      "name": "سرویس قابلمه",
+      "nameEn": "Cookware Sets",
+      "icon": "package",
+      "color": "#10b981",
+      "description": "زیردسته سرویس قابلمه در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-kit-glass",
+      "parentId": "ms-c-kit",
+      "name": "ظروف شیشه‌ای",
+      "nameEn": "Glassware",
+      "icon": "package",
+      "color": "#10b981",
+      "description": "زیردسته ظروف شیشه‌ای در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-kit-plas",
+      "parentId": "ms-c-kit",
+      "name": "ظروف پلاستیکی",
+      "nameEn": "Plastic Containers",
+      "icon": "package",
+      "color": "#10b981",
+      "description": "زیردسته ظروف پلاستیکی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-pet-dog",
+      "parentId": "ms-c-pet",
+      "name": "غذای خشک سگ",
+      "nameEn": "Dry Dog Food",
+      "icon": "package",
+      "color": "#f97316",
+      "description": "زیردسته غذای خشک سگ در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-pet-cat",
+      "parentId": "ms-c-pet",
+      "name": "غذای خشک گربه",
+      "nameEn": "Dry Cat Food",
+      "icon": "package",
+      "color": "#f97316",
+      "description": "زیردسته غذای خشک گربه در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-pet-treat",
+      "parentId": "ms-c-pet",
+      "name": "تشویقی و غذای کنسروی",
+      "nameEn": "Treats & Canned",
+      "icon": "package",
+      "color": "#f97316",
+      "description": "زیردسته تشویقی و غذای کنسروی در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-pet-acc",
+      "parentId": "ms-c-pet",
+      "name": "ظرف، اسباب‌بازی و قلاده",
+      "nameEn": "Pet Accessories",
+      "icon": "package",
+      "color": "#f97316",
+      "description": "زیردسته ظرف، اسباب‌بازی و قلاده در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sea-nw",
+      "parentId": "ms-c-sea",
+      "name": "نوروز و شب عید",
+      "nameEn": "Nowruz",
+      "icon": "package",
+      "color": "#a855f7",
+      "description": "زیردسته نوروز و شب عید در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sea-rm",
+      "parentId": "ms-c-sea",
+      "name": "رمضان",
+      "nameEn": "Ramadan",
+      "icon": "package",
+      "color": "#a855f7",
+      "description": "زیردسته رمضان در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sea-sch",
+      "parentId": "ms-c-sea",
+      "name": "بازگشایی مدارس",
+      "nameEn": "Back to School",
+      "icon": "package",
+      "color": "#a855f7",
+      "description": "زیردسته بازگشایی مدارس در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-sea-sum",
+      "parentId": "ms-c-sea",
+      "name": "تابستان",
+      "nameEn": "Summer",
+      "icon": "package",
+      "color": "#a855f7",
+      "description": "زیردسته تابستان در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-hom-bag",
+      "parentId": "ms-c-hom",
+      "name": "کیسه فریزر و زباله",
+      "nameEn": "Bags & Sacks",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته کیسه فریزر و زباله در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-hom-foil",
+      "parentId": "ms-c-hom",
+      "name": "فویل و سلفون",
+      "nameEn": "Foil & Wrap",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته فویل و سلفون در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-hom-glov",
+      "parentId": "ms-c-hom",
+      "name": "دستکش و اسفنج",
+      "nameEn": "Gloves & Sponges",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته دستکش و اسفنج در ماژول کالاهای مصرفی سوپرمارکتی."
+    },
+    {
+      "id": "ms-c-hom-tab",
+      "parentId": "ms-c-hom",
+      "name": "سفره و ظروف یکبار مصرف",
+      "nameEn": "Disposable Tableware",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "زیردسته سفره و ظروف یکبار مصرف در ماژول کالاهای مصرفی سوپرمارکتی."
+    }
+  ]
+}
