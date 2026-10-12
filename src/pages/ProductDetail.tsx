@@ -19,6 +19,12 @@ import {
   SpecGrid as MiscSpecGrid,
   nextTierNudge as miscNextTierNudge,
 } from '@/modules/misc';
+import {
+  PerUnitPrices as SnackPerUnitPrices,
+  SpecChips as SnackSpecChips,
+  SpecGrid as SnackSpecGrid,
+  nextTierNudge as snackNextTierNudge,
+} from '@/modules/snacks';
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -489,6 +495,26 @@ const ProductDetail = () => {
                     <div className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-[11.5px] font-bold text-emerald-800 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
                       <Icon name="trendingDown" className="h-4 w-4 flex-none" />
                       {miscNextTierNudge(product, qty, useStore.getState().settings)!.message}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {tab === 'specs' && product.snacks && (
+                <div className="mt-5 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="flex items-center gap-1.5 text-[13px] font-extrabold text-ink-800 dark:text-ink-100">
+                      <Icon name="candy" className="h-4 w-4 text-amber-500" />
+                      مشخصات تخصصی تنقلات
+                    </h3>
+                    <SnackSpecChips product={product} max={4} />
+                  </div>
+                  <SnackSpecGrid product={product} />
+                  <SnackPerUnitPrices product={product} />
+                  {snackNextTierNudge(product, qty, useStore.getState().settings) && (
+                    <div className="flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-[11.5px] font-bold text-emerald-800 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
+                      <Icon name="trendingDown" className="h-4 w-4 flex-none" />
+                      {snackNextTierNudge(product, qty, useStore.getState().settings)!.message}
                     </div>
                   )}
                 </div>

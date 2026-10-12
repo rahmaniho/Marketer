@@ -30,6 +30,8 @@ const BADGE_MAP: Record<string, { label: string; tone: 'success' | 'warning' | '
   seasonal: { label: '🎁 فصلی', tone: 'vip', icon: 'gift' },
   economy: { label: 'اقتصادی', tone: 'success', icon: 'wallet' },
   premium: { label: 'پریمیوم', tone: 'vip', icon: 'crown' },
+  // ── نشان‌های ماژول تنقلات (کارن سافت)
+  'sugar-free': { label: '🌿 بدون قند', tone: 'success', icon: 'leaf' },
 };
 
 export const ProductCard = ({ product, brand, compact = false }: { product: Product; brand?: Brand; compact?: boolean }) => {
