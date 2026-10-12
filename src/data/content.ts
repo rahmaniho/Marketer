@@ -248,6 +248,13 @@ export const settings: Settings = {
   expiryWarnDays: 90,
   settlementTerms: ['نقدی (۳٪ تخفیف)', 'اعتباری ۳۰ روزه', 'اعتباری ۴۵ روزه', 'چک ۶۰ روزه', 'اقساطی ۳ ماهه', 'اقساطی ۶ ماهه'],
   businessModels: ['مارکت‌پلیس چندفروشندگی', 'Dropshipping', 'فروش امانی', 'White-label', 'فرنچایز منطقه‌ای', 'چندشعبه‌ای', 'چندارزی (ریال/یورو/درهم)', 'B2B2C'],
+  modules: {
+    food: true,
+    detergent: true,
+    hygiene: true,
+    misc: true,
+    snacks: true,
+  },
 };
 
 export const complianceItems = [

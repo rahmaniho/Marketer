@@ -1,0 +1,47 @@
+{
+  "$comment": "تأمین‌کنندگان و پخش‌کنندگان بهداشتی و آرایشی (Mock Data — کارن سافت)",
+  "suppliers": [
+    {
+      "id": "hhsup-001", "name": "بازرگانی هیوا", "supplierType": "hygiene", "country": "ایران",
+      "contactName": "آقای هیوا", "phone": "021-77889900", "email": "info@heeva.example",
+      "paymentTerms": "پیش‌پرداخت ۵۰٪", "leadTimeDays": 15, "rating": 4.4,
+      "brandNames": ["کالوس", "نیوآ", "ژیلت", "پنتن", "کلیر"], "monthlyVolume": 5400000000, "fillRate": 90,
+      "notes": "واردات محصولات شوینده، بهداشتی و آرایشی اروپایی."
+    },
+    {
+      "id": "hhsup-002", "name": "گلی کالا", "supplierType": "hygiene", "country": "ایران",
+      "contactName": "واحد بازرگانی", "phone": "021-22334455", "email": "info@golikala.example",
+      "paymentTerms": "نقدی/چک", "leadTimeDays": 20, "rating": 4.3,
+      "brandNames": ["آمالفی", "آگرادو"], "monthlyVolume": 1800000000, "fillRate": 87,
+      "notes": "نماینده رسمی محصولات اروپایی (اسپانیا)."
+    },
+    {
+      "id": "hhsup-003", "name": "شرکت به‌پخش", "supplierType": "hygiene", "country": "ایران",
+      "contactName": "واحد فروش", "phone": "021-44556677", "email": "info@behpoosh.example",
+      "paymentTerms": "تسویه ۳۰ روزه", "leadTimeDays": 3, "rating": 4.7,
+      "brandNames": ["گلتاش", "درماتیپیک", "لیدر"], "monthlyVolume": 3900000000, "fillRate": 95,
+      "notes": "توزیع حدود ۹۷ درصد محصولات گلتاش در سراسر ایران."
+    },
+    {
+      "id": "hhsup-004", "name": "ایلیا تجارت نانو رز", "supplierType": "mixed", "country": "ایران",
+      "contactName": "واحد پخش", "phone": "021-66778899", "email": "info@nanooroz.example",
+      "paymentTerms": "نقدی", "leadTimeDays": 2, "rating": 4.0,
+      "brandNames": ["پاکسان", "سافت", "آس"], "monthlyVolume": 2100000000, "fillRate": 86,
+      "notes": "تولید، بازرگانی و عمده‌فروشی شوینده و بهداشتی پودری و مایع — تهران."
+    },
+    {
+      "id": "hhsup-005", "name": "صدف تجارت کار", "supplierType": "hygiene", "country": "ایران",
+      "contactName": "واحد فروش", "phone": "021-33669988", "email": "info@sadaftrade.example",
+      "paymentTerms": "تسویه ۴۵ روزه", "leadTimeDays": 8, "rating": 4.2,
+      "brandNames": ["کاپوس"], "monthlyVolume": 1500000000, "fillRate": 84,
+      "notes": "تولید و پخش محصولات شوینده و بهداشتی — جذب نماینده فعال از سراسر کشور."
+    },
+    {
+      "id": "hhsup-006", "name": "نگین پخش پایدار", "supplierType": "mixed", "country": "ایران",
+      "contactName": "واحد فروش", "phone": "021-88224466", "email": "info@neginpakhsh.example",
+      "paymentTerms": "تسویه ۳۰ روزه", "leadTimeDays": 3, "rating": 4.5,
+      "brandNames": ["سینره", "فولیکا", "مای"], "monthlyVolume": 3300000000, "fillRate": 92,
+      "notes": "توزیع محصولات غذایی، بهداشتی و شوینده برای فروشگاه‌ها و داروخانه‌ها."
+    }
+  ]
+}

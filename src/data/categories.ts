@@ -1,8 +1,13 @@
 import type { Category } from '@/lib/types';
+import { dhCategories } from '@/modules/dh/data';
+import { msCategories } from '@/modules/misc/data';
+import { snCategories } from '@/modules/snacks/data';
 
 /**
  * درخت دسته‌بندی محصولات (دوسطحی)
  * icon = نام آیکون در نقشه آیکون‌های اپ
+ * دسته‌های ماژول شوینده و بهداشتی از /data/detergent/ و /data/hygiene/،
+ * کالاهای مصرفی از /data/misc/ و تنقلات از /data/snacks/ بارگذاری می‌شوند.
  */
 export const categories: Category[] = [
   // ---------- ریشه‌ها ----------
@@ -85,6 +90,15 @@ export const categories: Category[] = [
   // ---------- ملزومات ----------
   { id: 'packaging', parentId: 'office', name: 'بسته‌بندی و پاکت', nameEn: 'Packaging', icon: 'package', color: '#64748b', description: 'پاکت، نایلون، ظرف یکبار مصرف' },
   { id: 'pos', parentId: 'office', name: 'کنترات و تجهیزات فروشگاه', nameEn: 'Store Equipment', icon: 'store', color: '#64748b', description: 'رول کاغذ، لیبل، بارکدخوان و ملزومات صنفی' },
+
+  // ---------- ماژول شوینده و بهداشتی (کارن سافت) ----------
+  ...dhCategories,
+
+  // ---------- ماژول سایر کالاهای مصرفی سوپرمارکتی (کارن سافت) ----------
+  ...msCategories,
+
+  // ---------- ماژول تنقلات (کارن سافت) ----------
+  ...snCategories,
 ];
 
 export const categoryById = (id: string) => categories.find((c) => c.id === id);

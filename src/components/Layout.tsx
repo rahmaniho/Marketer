@@ -106,6 +106,7 @@ export const CustomerLayout = () => {
   const customer = useStore((s) => s.customer);
   const theme = useStore((s) => s.theme);
   const toggleTheme = useStore((s) => s.toggleTheme);
+  const settings = useStore((s) => s.settings);
   const notifications = useStore((s) => s.notifications);
   const markRead = useStore((s) => s.markNotificationsRead);
   const [menu, setMenu] = useState(false);
@@ -119,6 +120,12 @@ export const CustomerLayout = () => {
   const unread = notifications.filter((n) => !n.read && (n.audience === 'customer' || n.audience === 'both')).length;
   const myOrders = orders.filter((o) => customer && o.customerId === customer.id).length;
   const wallet = toman(customer?.walletBalance ?? 0);
+  // Feature Flag ماژول شوینده و بهداشتی (کارن سافت)
+  const dhEnabled = (settings.modules?.detergent ?? true) || (settings.modules?.hygiene ?? true);
+  // Feature Flag ماژول سایر کالاهای مصرفی سوپرمارکتی (کارن سافت)
+  const miscEnabled = settings.modules?.misc ?? true;
+  // Feature Flag ماژول تنقلات (کارن سافت)
+  const snacksEnabled = settings.modules?.snacks ?? true;
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -211,6 +218,9 @@ export const CustomerLayout = () => {
           <nav className="no-scrollbar flex items-center gap-1 overflow-x-auto">
             <NavItem to="/" label="خانه" icon="home" />
             <NavItem to="/catalog" label="کاتالوگ کالا" icon="grid" />
+            {dhEnabled && <NavItem to="/dh" label="شوینده و بهداشتی" icon="spray" />}
+            {miscEnabled && <NavItem to="/misc" label="کالاهای مصرفی" icon="box" />}
+            {snacksEnabled && <NavItem to="/snacks" label="تنقلات" icon="candy" />}
             <NavItem to="/brands" label="برندها" icon="badge" />
             <NavItem to="/categories" label="دسته‌بندی‌ها" icon="layers" />
             <NavItem to="/offers" label="آفرها و کمپین‌ها" icon="tag" />
@@ -232,6 +242,9 @@ export const CustomerLayout = () => {
             {[
               ['/', 'خانه', 'home'],
               ['/catalog', 'کاتالوگ کالا', 'grid'],
+              ...(dhEnabled ? [['/dh', 'شوینده و بهداشتی', 'spray']] : []),
+              ...(miscEnabled ? [['/misc', 'کالاهای مصرفی', 'box']] : []),
+              ...(snacksEnabled ? [['/snacks', 'تنقلات', 'candy']] : []),
               ['/brands', 'برندها', 'badge'],
               ['/categories', 'دسته‌بندی‌ها', 'layers'],
               ['/offers', 'آفرها', 'tag'],
@@ -445,6 +458,9 @@ const ADMIN_NAV: { group: string; items: [string, string, string][] }[] = [
     items: [
       ['/admin/products', 'مدیریت محصولات', 'grid'],
       ['/admin/brands', 'مدیریت برندها', 'badge'],
+      ['/admin/dh', 'ماژول شوینده و بهداشتی', 'spray'],
+      ['/admin/misc', 'ماژول کالاهای مصرفی', 'box'],
+      ['/admin/snacks', 'ماژول تنقلات', 'candy'],
       ['/admin/warehouse', 'انبار، بچ و موجودی', 'warehouse'],
       ['/admin/suppliers', 'تأمین‌کنندگان', 'truck'],
       ['/admin/logistics', 'حمل، مسیر و POD', 'route'],

@@ -1,0 +1,48 @@
+{
+  "$comment": "کمپین‌ها و آفرهای فصلی ماژول شوینده (Mock Data — کارن سافت)",
+  "offers": [
+    {
+      "id": "dho-001", "title": "کمپین خانه‌تکانی — ۱۰٪ تخفیف شوینده",
+      "kind": "seasonal", "description": "به مناسبت خانه‌تکانی نوروزی، ۱۰٪ تخفیف روی تمام محصولات شوینده و پاک‌کننده فعال است.",
+      "percent": 10, "code": "KHKAN10",
+      "categoryIds": ["dh-clean", "dh-powder-machine", "dh-liquid-laundry", "dh-dishwash", "dh-bleach", "dh-descaler", "dh-stain", "dh-softener", "dh-carpet", "dh-glass", "dh-degreaser", "dh-surface-disinfect"],
+      "minCartAmount": 8000000, "minQty": 4, "days": 45, "color": "#0ea5e9", "icon": "sparkles", "vipOnly": false
+    },
+    {
+      "id": "dho-002", "title": "آفر ویژه نوروز — ۱۲٪ تخفیف سبد بهاره",
+      "kind": "seasonal", "description": "سفارش‌های بهاره با حداقل ۱۵ میلیون تومان، ۱۲٪ تخفیف و ارسال رایگان می‌گیرند.",
+      "percent": 12, "code": "NOWRUZ12",
+      "categoryIds": [], "minCartAmount": 15000000, "minQty": 8, "days": 60, "color": "#22c55e", "icon": "gift", "vipOnly": false
+    },
+    {
+      "id": "dho-003", "title": "بازگشایی مدارس — ۸٪ تخفیف اقلام بهداشتی کودک",
+      "kind": "seasonal", "description": "ویژه بازگشایی مدارس: ۸٪ تخفیف روی لکه‌بر کودک، شامپو بچه و اقلام بهداشتی مدرسه.",
+      "percent": 8, "code": "SCHOOL8",
+      "productIds": [], "minCartAmount": 4000000, "minQty": 2, "days": 40, "color": "#f59e0b", "icon": "award", "vipOnly": false
+    },
+    {
+      "id": "dho-004", "title": "تخفیف نقدی ۴٪ تسویه فوری شوینده",
+      "kind": "cash", "description": "در تسویه نقدی سفارش‌های ماژول شوینده، ۴٪ تخفیف اضافه اعمال می‌شود.",
+      "percent": 4, "code": "DHCASH4",
+      "categoryIds": ["dh-clean", "dh-home"], "minCartAmount": 5000000, "minQty": 0, "days": 120, "color": "#16a34a", "icon": "wallet", "vipOnly": false
+    },
+    {
+      "id": "dho-005", "title": "خرید پالتی گالن و کارتن بزرگ — ۱۴٪ تخفیف",
+      "kind": "volume", "description": "سفارش پالتی اقلام حجیم (گالن ۲۰ لیتری و کارتن بزرگ) تا ۱۴٪ تخفیف حجمی.",
+      "percent": 14, "code": "PALLET14",
+      "categoryIds": ["dh-dishwash", "dh-liquid-laundry"], "minCartAmount": 0, "minQty": 30, "days": 90, "color": "#0284c7", "icon": "layers", "vipOnly": false
+    },
+    {
+      "id": "dho-006", "title": "آفر اختصاصی VIP فروشگاه‌های زنجیره‌ای",
+      "kind": "vip", "description": "۷٪ تخفیف تکمیلی برای مشتریان VIP روی قراردادهای پیمانی شوینده.",
+      "percent": 7, "code": "DHVIP7",
+      "categoryIds": [], "minCartAmount": 25000000, "minQty": 10, "days": 150, "color": "#7c3aed", "icon": "crown", "vipOnly": true
+    },
+    {
+      "id": "dho-007", "title": "اولین خرید شوینده — ۵٪ خوش‌آمدگویی",
+      "kind": "first-order", "description": "هدیه اولین سفارش ماژول شوینده و بهداشتی: ۵٪ تخفیف بدون شرط حداقل مبلغ.",
+      "percent": 5, "code": "DHFIRST5",
+      "categoryIds": [], "minCartAmount": 0, "minQty": 1, "days": 90, "color": "#ec4899", "icon": "rocket", "vipOnly": false
+    }
+  ]
+}

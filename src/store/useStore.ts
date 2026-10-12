@@ -6,8 +6,10 @@ import type {
   AuditLog,
   Brand,
   CartLine,
+  Compliance,
   Contract,
   Customer,
+  ModuleKey,
   Notification,
   Offer,
   Order,
@@ -22,6 +24,9 @@ import { computePrice } from '@/lib/pricing';
 import { products as mockProducts } from '@/data/products';
 import { brands as mockBrands } from '@/data/brands';
 import { offers as mockOffers } from '@/data/offers';
+import { dhBrands, dhCompliance, dhOffers, dhProducts } from '@/modules/dh/data';
+import { msBrands, msCompliance, msOffers, msProducts } from '@/modules/misc/data';
+import { snBrands, snCompliance, snOffers, snProducts } from '@/modules/snacks/data';
 import { customers as mockCustomers, orders as mockOrders } from '@/data/ops';
 import { contracts as mockContracts } from '@/data/crm';
 import { settings as defaultSettings } from '@/data/content';
@@ -59,6 +64,7 @@ interface StoreState {
   brandEdits: Record<string, Brand>;
   offerEdits: Record<string, Offer>;
   customerEdits: Record<string, Customer>;
+  complianceEdits: Record<string, Compliance>;
   orderStatusEdits: Record<string, OrderStatus>;
   contractsExtra: Contract[];
   upsertProduct: (p: Product) => void;
@@ -66,6 +72,7 @@ interface StoreState {
   upsertBrand: (b: Brand) => void;
   upsertOffer: (o: Offer) => void;
   upsertCustomer: (c: Customer) => void;
+  upsertCompliance: (c: Compliance) => void;
   setOrderStatus: (orderId: string, status: OrderStatus) => void;
   addContract: (c: Contract) => void;
 
@@ -213,6 +220,7 @@ export const useStore = create<StoreState>()(
       brandEdits: {},
       offerEdits: {},
       customerEdits: {},
+      complianceEdits: {},
       orderStatusEdits: {},
       contractsExtra: [],
       upsertProduct: (p) => {
@@ -268,6 +276,19 @@ export const useStore = create<StoreState>()(
           severity: 'warning',
         });
       },
+      upsertCompliance: (c) => {
+        set((s) => ({ complianceEdits: { ...s.complianceEdits, [c.id]: c } }));
+        get().logAction({
+          userId: get().admin?.id ?? 'u-001',
+          userName: get().admin?.fullName ?? 'مدیر ارشد سیستم',
+          roleId: get().admin?.roleId ?? 'superadmin',
+          action: 'ذخیره مجوز / استاندارد',
+          entity: 'Compliance',
+          entityId: c.id,
+          detail: `${c.kind} «${c.title}» — ${c.refCode} — وضعیت ${c.status}`,
+          severity: c.status === 'expired' ? 'critical' : 'info',
+        });
+      },
       setOrderStatus: (orderId, status) => {
         set((s) => ({ orderStatusEdits: { ...s.orderStatusEdits, [orderId]: status } }));
         get().logAction({
@@ -291,7 +312,7 @@ export const useStore = create<StoreState>()(
         get().recalcCart();
       },
       addToCart: (productId, qty) => {
-        const product = [...Object.values(get().productEdits), ...mockProducts].find((p) => p.id === productId);
+        const product = findProduct(get(), productId) ?? allProducts(get()).find((p) => p.id === productId);
         if (!product) return;
         const existing = get().cart.find((l) => l.productId === productId);
         const newQty = (existing?.qty ?? 0) + qty;
@@ -523,29 +544,114 @@ export const useStore = create<StoreState>()(
         subscriptions: s.subscriptions,
         groupBuys: s.groupBuys,
       }),
+      /** ادغام امن ذخیره‌شده‌ها با وضعیت فعلی (حفظ ماژول‌های جدید پس از ارتقا) */
+      merge: (persistedState, currentState) => {
+        const persisted = (persistedState ?? {}) as Partial<StoreState>;
+        return {
+          ...currentState,
+          ...persisted,
+          settings: {
+            ...currentState.settings,
+            ...(persisted.settings ?? {}),
+            modules: {
+              ...currentState.settings.modules,
+              ...(persisted.settings?.modules ?? {}),
+            },
+          },
+        };
+      },
     },
   ),
 );
 
 // ─────────────────────────────────────────── توابع کمکی بیرون از استور
+
+/** بررسی Feature Flag ماژول‌ها — در صورت نبود تنظیمات، همه ماژول‌ها فعال‌اند */
+export const isModuleEnabled = (settings: Settings | undefined | null, module: ModuleKey): boolean => {
+  const m = settings?.modules;
+  if (!m) return true;
+  switch (module) {
+    case 'food':
+      return m.food ?? true;
+    case 'detergent':
+      return m.detergent ?? true;
+    case 'hygiene':
+      return m.hygiene ?? true;
+    case 'snacks':
+      return m.snacks ?? true;
+    default:
+      return m.misc ?? true;
+  }
+};
+
+/**
+ * یافتن محصول — بدون فیلتر Feature Flag (برای سبد خرید و سوابق سفارش)
+ * محصولات همه ماژول‌ها (شوینده، بهداشتی، کالاهای مصرفی، تنقلات) جست‌وجو می‌شوند.
+ */
 export const findProduct = (state: Pick<StoreState, 'productEdits'>, id: string): Product | undefined =>
-  state.productEdits[id] ?? mockProducts.find((p) => p.id === id);
+  state.productEdits[id] ??
+  mockProducts.find((p) => p.id === id) ??
+  dhProducts.find((p) => p.id === id) ??
+  msProducts.find((p) => p.id === id) ??
+  snProducts.find((p) => p.id === id);
 
-export const allProducts = (state: Pick<StoreState, 'productEdits' | 'deletedProductIds'>): Product[] => {
+export const allProducts = (state: Pick<StoreState, 'productEdits' | 'deletedProductIds' | 'settings'>): Product[] => {
   const editedIds = new Set(Object.keys(state.productEdits));
-  const base = mockProducts.filter((p) => !state.deletedProductIds.includes(p.id) && !editedIds.has(p.id));
+  const base = [...mockProducts, ...dhProducts, ...msProducts, ...snProducts].filter(
+    (p) => !state.deletedProductIds.includes(p.id) && !editedIds.has(p.id),
+  );
   const edited = Object.values(state.productEdits).filter((p) => !state.deletedProductIds.includes(p.id));
-  return [...edited, ...base];
+  return [...edited, ...base].filter((p) => isModuleEnabled(state.settings, p.module));
 };
 
-export const allBrands = (state: Pick<StoreState, 'brandEdits'>): Brand[] => {
+export const allBrands = (state: Pick<StoreState, 'brandEdits' | 'settings'>): Brand[] => {
   const editedIds = new Set(Object.keys(state.brandEdits));
-  return [...Object.values(state.brandEdits), ...mockBrands.filter((b) => !editedIds.has(b.id))];
+  const merged = [
+    ...Object.values(state.brandEdits),
+    ...mockBrands,
+    ...dhBrands.filter((b) => !editedIds.has(b.id)),
+    ...msBrands.filter((b) => !editedIds.has(b.id)),
+    ...snBrands.filter((b) => !editedIds.has(b.id)),
+  ];
+  return merged.filter((b) => {
+    if (b.id.startsWith('dh-br-')) {
+      const det = b.industry === 'detergent' || b.industry === 'mixed';
+      const hyg = b.industry === 'hygiene' || b.industry === 'mixed';
+      return (det && isModuleEnabled(state.settings, 'detergent')) || (hyg && isModuleEnabled(state.settings, 'hygiene'));
+    }
+    if (b.id.startsWith('ms-br-')) return isModuleEnabled(state.settings, 'misc');
+    if (b.id.startsWith('sn-br-')) return isModuleEnabled(state.settings, 'snacks');
+    return isModuleEnabled(state.settings, 'food');
+  });
 };
 
-export const getAllOffers = (state: Pick<StoreState, 'offerEdits'>): Offer[] => {
+export const getAllOffers = (state: Pick<StoreState, 'offerEdits' | 'settings'>): Offer[] => {
   const editedIds = new Set(Object.keys(state.offerEdits));
-  return [...Object.values(state.offerEdits), ...mockOffers.filter((o) => !editedIds.has(o.id))];
+  const merged = [
+    ...Object.values(state.offerEdits),
+    ...mockOffers,
+    ...dhOffers.filter((o) => !editedIds.has(o.id)),
+    ...msOffers.filter((o) => !editedIds.has(o.id)),
+    ...snOffers.filter((o) => !editedIds.has(o.id)),
+  ];
+  return merged.filter((o) => {
+    if (o.id.startsWith('dho-')) return isModuleEnabled(state.settings, 'detergent');
+    if (o.id.startsWith('hho-')) return isModuleEnabled(state.settings, 'hygiene');
+    if (o.id.startsWith('mso-')) return isModuleEnabled(state.settings, 'misc');
+    if (o.id.startsWith('sno-')) return isModuleEnabled(state.settings, 'snacks');
+    return isModuleEnabled(state.settings, 'food');
+  });
+};
+
+/** مجوزها و استانداردها (با امکان ویرایش ادمین) — همه ماژول‌ها */
+export const allCompliance = (state: Pick<StoreState, 'complianceEdits'>): Compliance[] => {
+  const editedIds = new Set(Object.keys(state.complianceEdits));
+  return [
+    ...Object.values(state.complianceEdits),
+    ...dhCompliance.filter((c) => !editedIds.has(c.id)),
+    ...msCompliance.filter((c) => !editedIds.has(c.id)),
+    ...snCompliance.filter((c) => !editedIds.has(c.id)),
+  ];
 };
 
 export const getActiveContract = (
@@ -594,17 +700,25 @@ export const allAuditLogs = (state: Pick<StoreState, 'auditExtras'>): AuditLog[]
 export const useProducts = () => {
   const productEdits = useStore((s) => s.productEdits);
   const deletedProductIds = useStore((s) => s.deletedProductIds);
-  return useMemo(() => allProducts({ productEdits, deletedProductIds }), [productEdits, deletedProductIds]);
+  const settings = useStore((s) => s.settings);
+  return useMemo(() => allProducts({ productEdits, deletedProductIds, settings }), [productEdits, deletedProductIds, settings]);
 };
 
 export const useBrands = () => {
   const brandEdits = useStore((s) => s.brandEdits);
-  return useMemo(() => allBrands({ brandEdits }), [brandEdits]);
+  const settings = useStore((s) => s.settings);
+  return useMemo(() => allBrands({ brandEdits, settings }), [brandEdits, settings]);
 };
 
 export const useOffers = () => {
   const offerEdits = useStore((s) => s.offerEdits);
-  return useMemo(() => getAllOffers({ offerEdits }), [offerEdits]);
+  const settings = useStore((s) => s.settings);
+  return useMemo(() => getAllOffers({ offerEdits, settings }), [offerEdits, settings]);
+};
+
+export const useCompliance = () => {
+  const complianceEdits = useStore((s) => s.complianceEdits);
+  return useMemo(() => allCompliance({ complianceEdits }), [complianceEdits]);
 };
 
 export const useOrders = () => {

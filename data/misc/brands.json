@@ -1,0 +1,1819 @@
+{
+  "brands": [
+    {
+      "name": "کیان",
+      "nameEn": "Kian",
+      "company": "صنایع نوشت‌افزار کیان",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "خودکار",
+        "روان‌نویس",
+        "مداد",
+        "پاک‌کن",
+        "مدادتراش",
+        "لاک‌غلط‌گیر"
+      ]
+    },
+    {
+      "name": "پنتر",
+      "nameEn": "Panter",
+      "company": "پنتر",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "خودکار آنتی‌باکتریال",
+        "اتود ارگونومیک",
+        "ابزار علامت‌گذاری",
+        "مداد",
+        "پاک‌کن"
+      ]
+    },
+    {
+      "name": "پلیکان",
+      "nameEn": "Pelican",
+      "company": "پلیکان",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "خودکار",
+        "جوهر",
+        "غلط‌گیر",
+        "ابزار رنگ‌آمیزی",
+        "مداد رنگی"
+      ]
+    },
+    {
+      "name": "پاپکو",
+      "nameEn": "Papco",
+      "company": "پاپکو",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "خودکار",
+        "کوله‌پشتی",
+        "جامدادی",
+        "دفتر"
+      ]
+    },
+    {
+      "name": "آریا",
+      "nameEn": "Arya",
+      "company": "آریا",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "دفتر",
+        "خودکار",
+        "مداد",
+        "لوازم اداری"
+      ]
+    },
+    {
+      "name": "کنکو",
+      "nameEn": "Canco",
+      "company": "کنکو",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "دفتر",
+        "خودکار",
+        "ملزومات اداری"
+      ]
+    },
+    {
+      "name": "پارس‌مداد",
+      "nameEn": "Pars Mabad",
+      "company": "پارس‌مداد",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "مداد رنگی",
+        "مداد مشکی"
+      ]
+    },
+    {
+      "name": "فکتیس",
+      "nameEn": "Fetix",
+      "company": "فکتیس",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "مداد رنگی"
+      ]
+    },
+    {
+      "name": "شیدکو",
+      "nameEn": "Shidco",
+      "company": "شیدکو",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "دفتر",
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "دایان",
+      "nameEn": "Dayan",
+      "company": "دایان",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "دفتر",
+        "کاغذ مرغوب"
+      ]
+    },
+    {
+      "name": "سی‌کلاس",
+      "nameEn": "C-Class",
+      "company": "سی‌کلاس",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "پیکاسو",
+      "nameEn": "Picasso",
+      "company": "پیکاسو",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر",
+        "مداد رنگی"
+      ]
+    },
+    {
+      "name": "آرت‌لاین",
+      "nameEn": "Artline",
+      "company": "آرت‌لاین",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "ماژیک",
+        "ابزار طراحی"
+      ]
+    },
+    {
+      "name": "لوکی",
+      "nameEn": "Loki",
+      "company": "لوکی",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "الیپون",
+      "nameEn": "Elipon",
+      "company": "الیپون",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "ارس",
+      "nameEn": "Aras",
+      "company": "ارس",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "سفیر",
+      "nameEn": "Safir",
+      "company": "سفیر",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "عالی تحریر پارسیان",
+      "nameEn": "Aali Tahrir Parsian",
+      "company": "عالی تحریر پارسیان",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر استاندارد و ایمن"
+      ]
+    },
+    {
+      "name": "نهال آلما",
+      "nameEn": "Nahal Alma",
+      "company": "نهال آلما",
+      "industry": "stationery",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر",
+        "کوله‌پشتی"
+      ]
+    },
+    {
+      "name": "فابرکاستل",
+      "nameEn": "Faber-Castell",
+      "company": "Faber-Castell",
+      "industry": "stationery",
+      "country": "آلمان",
+      "productLines": [
+        "مداد",
+        "مداد رنگی",
+        "ابزار طراحی"
+      ]
+    },
+    {
+      "name": "استدلر",
+      "nameEn": "Staedtler",
+      "company": "Staedtler",
+      "industry": "stationery",
+      "country": "آلمان",
+      "productLines": [
+        "مداد",
+        "ابزار طراحی"
+      ]
+    },
+    {
+      "name": "استابیلو",
+      "nameEn": "Stabilo",
+      "company": "Stabilo",
+      "industry": "stationery",
+      "country": "آلمان",
+      "productLines": [
+        "خودکار",
+        "ماژیک",
+        "هایلایت"
+      ]
+    },
+    {
+      "name": "پارکر",
+      "nameEn": "Parker",
+      "company": "Parker",
+      "industry": "stationery",
+      "country": "انگلستان",
+      "productLines": [
+        "روان‌نویس",
+        "خودکار"
+      ]
+    },
+    {
+      "name": "کرونا",
+      "nameEn": "Corona",
+      "company": "Corona",
+      "industry": "stationery",
+      "country": "ترکیه",
+      "productLines": [
+        "لوازم‌التحریر"
+      ]
+    },
+    {
+      "name": "کملیون",
+      "nameEn": "Camelion",
+      "company": "Camelion",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری",
+        "شارژر",
+        "چراغ‌قوه",
+        "لامپ LED"
+      ]
+    },
+    {
+      "name": "لکلر",
+      "nameEn": "Lecelor",
+      "company": "لکلر",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "محصولات روشنایی",
+        "لامپ LED"
+      ]
+    },
+    {
+      "name": "اویلا",
+      "nameEn": "Oila",
+      "company": "اویلا",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "فامیلا",
+      "nameEn": "Famila",
+      "company": "فامیلا",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "میکروپاور",
+      "nameEn": "Micropower",
+      "company": "میکروپاور",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری",
+        "شارژر"
+      ]
+    },
+    {
+      "name": "بینگو",
+      "nameEn": "Bingo",
+      "company": "بینگو",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "نیوتیس",
+      "nameEn": "Newtis",
+      "company": "نیوتیس",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "مینت",
+      "nameEn": "Mint",
+      "company": "مینت",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری",
+        "فندک"
+      ]
+    },
+    {
+      "name": "تایگر",
+      "nameEn": "Tiger",
+      "company": "تایگر",
+      "industry": "battery",
+      "country": "ایران",
+      "productLines": [
+        "باتری",
+        "چراغ‌قوه",
+        "فندک"
+      ]
+    },
+    {
+      "name": "دوراسل",
+      "nameEn": "Duracell",
+      "company": "Duracell",
+      "industry": "battery",
+      "country": "آمریکا",
+      "productLines": [
+        "باتری قلمی",
+        "نیم‌قلمی",
+        "سکه‌ای"
+      ]
+    },
+    {
+      "name": "انرژایزر",
+      "nameEn": "Energizer",
+      "company": "Energizer",
+      "industry": "battery",
+      "country": "آمریکا",
+      "productLines": [
+        "باتری",
+        "چراغ‌قوه"
+      ]
+    },
+    {
+      "name": "پاناسونیک",
+      "nameEn": "Panasonic",
+      "company": "پاناسونیک",
+      "industry": "battery",
+      "country": "ژاپن",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "سونی",
+      "nameEn": "Sony",
+      "company": "Sony",
+      "industry": "battery",
+      "country": "ژاپن",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "آر.سی",
+      "nameEn": "R.C.",
+      "company": "R.C.",
+      "industry": "battery",
+      "country": "ترکیه",
+      "productLines": [
+        "باتری"
+      ]
+    },
+    {
+      "name": "ریوولی",
+      "nameEn": "Rivoli",
+      "company": "Rivoli",
+      "industry": "battery",
+      "country": "ترکیه",
+      "productLines": [
+        "باتری",
+        "فندک"
+      ]
+    },
+    {
+      "name": "سیویک",
+      "nameEn": "Civic",
+      "company": "Civic",
+      "industry": "battery",
+      "country": "ترکیه",
+      "productLines": [
+        "باتری",
+        "فندک"
+      ]
+    },
+    {
+      "name": "بیک",
+      "nameEn": "Bic",
+      "company": "Bic",
+      "industry": "battery",
+      "country": "فرانسه",
+      "productLines": [
+        "فندک"
+      ]
+    },
+    {
+      "name": "کریکت",
+      "nameEn": "Cricket",
+      "company": "Cricket",
+      "industry": "battery",
+      "country": "فرانسه",
+      "productLines": [
+        "فندک"
+      ]
+    },
+    {
+      "name": "شیائومی",
+      "nameEn": "Xiaomi",
+      "company": "Xiaomi",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "پاوربانک",
+        "شارژر",
+        "کابل",
+        "هدفون",
+        "ساعت هوشمند"
+      ]
+    },
+    {
+      "name": "بیسوس",
+      "nameEn": "Baseus",
+      "company": "Baseus",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "پاوربانک",
+        "هولدر",
+        "قاب"
+      ]
+    },
+    {
+      "name": "انکر",
+      "nameEn": "Anker",
+      "company": "Anker",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "پاوربانک",
+        "کابل"
+      ]
+    },
+    {
+      "name": "مک‌دودو",
+      "nameEn": "Mcdodo",
+      "company": "Mcdodo",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "پاوربانک"
+      ]
+    },
+    {
+      "name": "الدینیو",
+      "nameEn": "Oladino",
+      "company": "Oladino",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل"
+      ]
+    },
+    {
+      "name": "ایس‌فست",
+      "nameEn": "AceFast",
+      "company": "AceFast",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل"
+      ]
+    },
+    {
+      "name": "هوکو",
+      "nameEn": "Hoco",
+      "company": "Hoco",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "پاوربانک",
+        "هولدر"
+      ]
+    },
+    {
+      "name": "بروفون",
+      "nameEn": "Borofone",
+      "company": "Borofone",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "پاوربانک",
+        "هدفون"
+      ]
+    },
+    {
+      "name": "ارلدام",
+      "nameEn": "Earldom",
+      "company": "Earldom",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "هندزفری"
+      ]
+    },
+    {
+      "name": "راک اسپیس",
+      "nameEn": "Rock Space",
+      "company": "Rock Space",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "گلس",
+        "قاب"
+      ]
+    },
+    {
+      "name": "ایکس‌دوریا",
+      "nameEn": "X-Doria",
+      "company": "X-Doria",
+      "industry": "mobile_accessory",
+      "country": "آمریکا",
+      "productLines": [
+        "قاب",
+        "گلس"
+      ]
+    },
+    {
+      "name": "جویروم",
+      "nameEn": "Joyroom",
+      "company": "Joyroom",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "هولدر"
+      ]
+    },
+    {
+      "name": "یوگرین",
+      "nameEn": "UGREEN",
+      "company": "UGREEN",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "کابل",
+        "شارژر",
+        "هاب"
+      ]
+    },
+    {
+      "name": "کاکوسیگا",
+      "nameEn": "Kakusiga",
+      "company": "Kakusiga",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "کابل",
+        "شارژر",
+        "پاوربانک"
+      ]
+    },
+    {
+      "name": "بی‌کارو",
+      "nameEn": "Beecaro",
+      "company": "Beecaro",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "اسپیکر",
+        "پارتی‌باکس"
+      ]
+    },
+    {
+      "name": "آبادوس",
+      "nameEn": "Abodos",
+      "company": "Abodos",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "پاوربانک",
+        "هدست",
+        "شارژر"
+      ]
+    },
+    {
+      "name": "وندنز",
+      "nameEn": "Vendens",
+      "company": "Vendens",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "لوازم جانبی موبایل"
+      ]
+    },
+    {
+      "name": "یسیدو",
+      "nameEn": "Yesido",
+      "company": "Yesido",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "لوازم جانبی موبایل",
+        "قاب"
+      ]
+    },
+    {
+      "name": "کوتتسی",
+      "nameEn": "Kutetsi",
+      "company": "Kutetsi",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "لوازم جانبی موبایل",
+        "قاب"
+      ]
+    },
+    {
+      "name": "گرین لاین",
+      "nameEn": "Green Line",
+      "company": "Green Line",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "لوازم جانبی موبایل",
+        "قاب"
+      ]
+    },
+    {
+      "name": "پاورولوجی",
+      "nameEn": "Powerology",
+      "company": "Powerology",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "پاوربانک",
+        "شارژر"
+      ]
+    },
+    {
+      "name": "پرودو",
+      "nameEn": "Porodo",
+      "company": "Porodo",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "لوازم جانبی موبایل",
+        "ساعت هوشمند"
+      ]
+    },
+    {
+      "name": "نیلکین",
+      "nameEn": "Nillkin",
+      "company": "Nillkin",
+      "industry": "mobile_accessory",
+      "country": "چین",
+      "productLines": [
+        "قاب",
+        "گلس"
+      ]
+    },
+    {
+      "name": "سامسونگ",
+      "nameEn": "Samsung",
+      "company": "Samsung",
+      "industry": "mobile_accessory",
+      "country": "کره جنوبی",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "ساعت هوشمند"
+      ]
+    },
+    {
+      "name": "فیلیپس",
+      "nameEn": "Philips",
+      "company": "Philips",
+      "industry": "mobile_accessory",
+      "country": "هلند",
+      "productLines": [
+        "شارژر",
+        "کابل",
+        "هدفون"
+      ]
+    },
+    {
+      "name": "پارس خزر",
+      "nameEn": "Pars Khazar",
+      "company": "پارس خزر",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "پلوپز",
+        "چای‌ساز",
+        "پنکه",
+        "خردکن",
+        "غذاساز",
+        "جاروبرقی"
+      ]
+    },
+    {
+      "name": "اسنوا",
+      "nameEn": "Snowa",
+      "company": "Snowa",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "یخچال",
+        "لباسشویی",
+        "تلویزیون",
+        "اجاق گاز"
+      ]
+    },
+    {
+      "name": "پاکشوما",
+      "nameEn": "Pakshoma",
+      "company": "Pakshoma",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لباسشویی",
+        "ظرفشویی",
+        "جاروبرقی"
+      ]
+    },
+    {
+      "name": "امرسان",
+      "nameEn": "Emersun",
+      "company": "امرسان",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی برقی"
+      ]
+    },
+    {
+      "name": "جی‌پلاس",
+      "nameEn": "G-Plus",
+      "company": "G-Plus",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی برقی"
+      ]
+    },
+    {
+      "name": "دوو",
+      "nameEn": "Daewoo",
+      "company": "Daewoo",
+      "industry": "home_appliance",
+      "country": "کره جنوبی",
+      "productLines": [
+        "یخچال",
+        "لباسشویی"
+      ]
+    },
+    {
+      "name": "الکترو استیل",
+      "nameEn": "Electro Steel",
+      "company": "الکترو استیل",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "هیمالیا",
+      "nameEn": "Himalia",
+      "company": "هیمالیا",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "ایکس‌ویژن",
+      "nameEn": "X-Vision",
+      "company": "ایکس‌ویژن",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "تلویزیون",
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "دیوپوینت",
+      "nameEn": "Dipo Point",
+      "company": "دیوپوینت",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "آبسال",
+      "nameEn": "Absal",
+      "company": "آبسال",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی",
+        "پنکه"
+      ]
+    },
+    {
+      "name": "برفاب",
+      "nameEn": "Barfab",
+      "company": "برفاب",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "سام الکترونیک",
+      "nameEn": "Sam Electronics",
+      "company": "سام الکترونیک",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "تی‌سی‌ال",
+      "nameEn": "TCL",
+      "company": "TCL",
+      "industry": "home_appliance",
+      "country": "چین",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "بایترون",
+      "nameEn": "Bitron",
+      "company": "Bitron",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "نانیوا",
+      "nameEn": "Naniwa",
+      "company": "Naniwa",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "مدیا تکنو",
+      "nameEn": "Media Techno",
+      "company": "مدیا تکنو",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "سانی",
+      "nameEn": "Sany",
+      "company": "Sany",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "فوما",
+      "nameEn": "Fuma",
+      "company": "Fuma",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی برقی"
+      ]
+    },
+    {
+      "name": "زیرووات",
+      "nameEn": "Zero Watt",
+      "company": "زیرووات",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "کندی",
+      "nameEn": "Candy",
+      "company": "Candy",
+      "industry": "home_appliance",
+      "country": "ایتالیا",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "آیوا",
+      "nameEn": "Aiwa",
+      "company": "Aiwa",
+      "industry": "home_appliance",
+      "country": "ژاپن",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "بنس",
+      "nameEn": "Bens",
+      "company": "Bens",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "آوکس",
+      "nameEn": "Aox",
+      "company": "Aox",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "نکسار",
+      "nameEn": "Nexar",
+      "company": "نکسار",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "ایستکول",
+      "nameEn": "Eastcool",
+      "company": "ایستکول",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "فریدولین",
+      "nameEn": "Fridolin",
+      "company": "فریدولین",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "لایف",
+      "nameEn": "Life",
+      "company": "لایف",
+      "industry": "home_appliance",
+      "country": "ایران",
+      "productLines": [
+        "مایکروویو",
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "بوش",
+      "nameEn": "Bosch",
+      "company": "Bosch",
+      "industry": "home_appliance",
+      "country": "آلمان",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "ال‌جی",
+      "nameEn": "LG",
+      "company": "LG",
+      "industry": "home_appliance",
+      "country": "کره جنوبی",
+      "productLines": [
+        "لوازم خانگی"
+      ]
+    },
+    {
+      "name": "تفال",
+      "nameEn": "Tefal",
+      "company": "Tefal",
+      "industry": "home_appliance",
+      "country": "فرانسه",
+      "productLines": [
+        "لوازم آشپزخانه برقی"
+      ]
+    },
+    {
+      "name": "دلونگی",
+      "nameEn": "De'Longhi",
+      "company": "De'Longhi",
+      "industry": "home_appliance",
+      "country": "ایتالیا",
+      "productLines": [
+        "لوازم آشپزخانه برقی"
+      ]
+    },
+    {
+      "name": "کنوود",
+      "nameEn": "Kenwood",
+      "company": "Kenwood",
+      "industry": "home_appliance",
+      "country": "انگلستان",
+      "productLines": [
+        "لوازم آشپزخانه برقی"
+      ]
+    },
+    {
+      "name": "براون",
+      "nameEn": "Braun",
+      "company": "Braun",
+      "industry": "home_appliance",
+      "country": "آلمان",
+      "productLines": [
+        "لوازم برقی کوچک"
+      ]
+    },
+    {
+      "name": "پارس اوپال",
+      "nameEn": "Pars Opal",
+      "company": "پارس اوپال",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف اوپال",
+        "سرویس غذاخوری"
+      ]
+    },
+    {
+      "name": "چینی زرین ایران",
+      "nameEn": "Zarin Iran",
+      "company": "چینی زرین ایران",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "چینی",
+        "سرویس غذاخوری"
+      ]
+    },
+    {
+      "name": "چینی مقصود",
+      "nameEn": "Maghsoud",
+      "company": "چینی مقصود",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "چینی",
+        "ظروف اوپال"
+      ]
+    },
+    {
+      "name": "آذین",
+      "nameEn": "Azin",
+      "company": "آذین",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف اوپال"
+      ]
+    },
+    {
+      "name": "دینو",
+      "nameEn": "Dino",
+      "company": "دینو",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف اوپال"
+      ]
+    },
+    {
+      "name": "رویال",
+      "nameEn": "Royal",
+      "company": "رویال",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف اوپال"
+      ]
+    },
+    {
+      "name": "لومینارک",
+      "nameEn": "Luminarc",
+      "company": "Luminarc",
+      "industry": "kitchenware",
+      "country": "فرانسه",
+      "productLines": [
+        "ظروف اوپال",
+        "ظروف شیشه‌ای"
+      ]
+    },
+    {
+      "name": "سپیده جام توس",
+      "nameEn": "Sepideh Jam Toos",
+      "company": "سپیده جام توس",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف شیشه‌ای مات"
+      ]
+    },
+    {
+      "name": "زرساب",
+      "nameEn": "Zarsab",
+      "company": "زرساب",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "سرویس قابلمه"
+      ]
+    },
+    {
+      "name": "کاندید",
+      "nameEn": "Candid",
+      "company": "کاندید",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "سرویس قابلمه"
+      ]
+    },
+    {
+      "name": "تابان",
+      "nameEn": "Taban",
+      "company": "تابان",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "سرویس قابلمه"
+      ]
+    },
+    {
+      "name": "چرو",
+      "nameEn": "Chro",
+      "company": "چرو",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "سرویس قابلمه"
+      ]
+    },
+    {
+      "name": "صنعت سازان",
+      "nameEn": "Sanat Sazan",
+      "company": "صنعت سازان",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه"
+      ]
+    },
+    {
+      "name": "زیباسازان",
+      "nameEn": "Zibasazan",
+      "company": "زیباسازان",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه"
+      ]
+    },
+    {
+      "name": "ناب استیل",
+      "nameEn": "Nab Steel",
+      "company": "ناب استیل",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه",
+        "سرویس قابلمه"
+      ]
+    },
+    {
+      "name": "نوین",
+      "nameEn": "Novin",
+      "company": "نوین",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه"
+      ]
+    },
+    {
+      "name": "پلاستیک کاشان",
+      "nameEn": "Kashan Plast",
+      "company": "پلاستیک کاشان",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف پلاستیکی"
+      ]
+    },
+    {
+      "name": "کالا پلاست",
+      "nameEn": "Kala Plast",
+      "company": "کالا پلاست",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف پلاستیکی"
+      ]
+    },
+    {
+      "name": "دنیاپلاستیک",
+      "nameEn": "Donya Plastic",
+      "company": "دنیاپلاستیک",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف پلاستیکی"
+      ]
+    },
+    {
+      "name": "اپادانا",
+      "nameEn": "Apadana",
+      "company": "اپادانا",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف پلاستیکی"
+      ]
+    },
+    {
+      "name": "ممتاز",
+      "nameEn": "Mamataz",
+      "company": "ممتاز",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه"
+      ]
+    },
+    {
+      "name": "پردیس ماهان",
+      "nameEn": "Pardis Mahan",
+      "company": "پردیس ماهان",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه"
+      ]
+    },
+    {
+      "name": "بهازکالا",
+      "nameEn": "Behazkala",
+      "company": "بهازکالا",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ملزومات آشپزخانه"
+      ]
+    },
+    {
+      "name": "آیری پلاست",
+      "nameEn": "Airi Plast",
+      "company": "آیری پلاست",
+      "industry": "kitchenware",
+      "country": "ایران",
+      "productLines": [
+        "ظروف پلاستیکی"
+      ]
+    },
+    {
+      "name": "پیرکس",
+      "nameEn": "Pyrex",
+      "company": "Pyrex",
+      "industry": "kitchenware",
+      "country": "آمریکا",
+      "productLines": [
+        "ظروف شیشه‌ای"
+      ]
+    },
+    {
+      "name": "تپرور",
+      "nameEn": "Tupperware",
+      "company": "Tupperware",
+      "industry": "kitchenware",
+      "country": "آمریکا",
+      "productLines": [
+        "ظروف پلاستیکی",
+        "ظروف نگهدارنده"
+      ]
+    },
+    {
+      "name": "لاکن",
+      "nameEn": "Lock & Lock",
+      "company": "Lock & Lock",
+      "industry": "kitchenware",
+      "country": "کره جنوبی",
+      "productLines": [
+        "ظروف نگهدارنده"
+      ]
+    },
+    {
+      "name": "فیدار پاتیرا",
+      "nameEn": "Fidar Patira",
+      "company": "فیدار پاتیرا",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "نوتری‌پت",
+      "nameEn": "NutriPet",
+      "company": "نوتری‌پت",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "شدو",
+      "nameEn": "Shadow",
+      "company": "شدو",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "وی‌پت",
+      "nameEn": "ViPet",
+      "company": "وی‌پت",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "سلبن",
+      "nameEn": "Selben",
+      "company": "سلبن",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "شایر",
+      "nameEn": "Shire",
+      "company": "شایر",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای تر کنسروی"
+      ]
+    },
+    {
+      "name": "مفید",
+      "nameEn": "Mofid",
+      "company": "مفید",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای گربه"
+      ]
+    },
+    {
+      "name": "لوکا",
+      "nameEn": "Luca",
+      "company": "لوکا",
+      "industry": "pet_supply",
+      "country": "ایران",
+      "productLines": [
+        "غذای گربه"
+      ]
+    },
+    {
+      "name": "آدیکت",
+      "nameEn": "Addict",
+      "company": "آدیکت",
+      "industry": "pet_supply",
+      "country": "ترکیه",
+      "productLines": [
+        "غذای گربه"
+      ]
+    },
+    {
+      "name": "ونپی",
+      "nameEn": "Wanpy",
+      "company": "ونپی",
+      "industry": "pet_supply",
+      "country": "چین",
+      "productLines": [
+        "تشویقی"
+      ]
+    },
+    {
+      "name": "جیمکت",
+      "nameEn": "GimCat",
+      "company": "GimCat",
+      "industry": "pet_supply",
+      "country": "آلمان",
+      "productLines": [
+        "تشویقی"
+      ]
+    },
+    {
+      "name": "دکتر کلادرز",
+      "nameEn": "Dr. Clauder's",
+      "company": "Dr. Clauder's",
+      "industry": "pet_supply",
+      "country": "آلمان",
+      "productLines": [
+        "تشویقی"
+      ]
+    },
+    {
+      "name": "دریمیز",
+      "nameEn": "Dremies",
+      "company": "دریمیز",
+      "industry": "pet_supply",
+      "country": "ترکیه",
+      "productLines": [
+        "تشویقی"
+      ]
+    },
+    {
+      "name": "پت پرایز",
+      "nameEn": "Pet Prize",
+      "company": "Pet Prize",
+      "industry": "pet_supply",
+      "country": "ترکیه",
+      "productLines": [
+        "تشویقی"
+      ]
+    },
+    {
+      "name": "رویال کنین",
+      "nameEn": "Royal Canin",
+      "company": "Royal Canin",
+      "industry": "pet_supply",
+      "country": "فرانسه",
+      "productLines": [
+        "غذای خشک سگ و گربه",
+        "رژیم درمانی"
+      ]
+    },
+    {
+      "name": "هیلز",
+      "nameEn": "Hill's",
+      "company": "Hill's",
+      "industry": "pet_supply",
+      "country": "آمریکا",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "مونژه",
+      "nameEn": "Monge",
+      "company": "Monge",
+      "industry": "pet_supply",
+      "country": "ایتالیا",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "پروپلن",
+      "nameEn": "Pro Plan",
+      "company": "Pro Plan",
+      "industry": "pet_supply",
+      "country": "آمریکا",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "آکانا",
+      "nameEn": "Acana",
+      "company": "Acana",
+      "industry": "pet_supply",
+      "country": "کانادا",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "ویسکاس",
+      "nameEn": "Whiskas",
+      "company": "Whiskas",
+      "industry": "pet_supply",
+      "country": "آمریکا",
+      "productLines": [
+        "غذای گربه"
+      ]
+    },
+    {
+      "name": "فلیکس",
+      "nameEn": "Felix",
+      "company": "Felix",
+      "industry": "pet_supply",
+      "country": "آمریکا",
+      "productLines": [
+        "غذای گربه"
+      ]
+    },
+    {
+      "name": "هپی کت",
+      "nameEn": "Happy Cat",
+      "company": "Happy Cat",
+      "industry": "pet_supply",
+      "country": "آلمان",
+      "productLines": [
+        "غذای گربه"
+      ]
+    },
+    {
+      "name": "جوسرا",
+      "nameEn": "Josera",
+      "company": "Josera",
+      "industry": "pet_supply",
+      "country": "آلمان",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "رفلکس",
+      "nameEn": "Reflex",
+      "company": "Reflex",
+      "industry": "pet_supply",
+      "country": "ترکیه",
+      "productLines": [
+        "غذای خشک سگ و گربه"
+      ]
+    },
+    {
+      "name": "بابین",
+      "nameEn": "Babin",
+      "company": "Babin",
+      "industry": "pet_supply",
+      "country": "ترکیه",
+      "productLines": [
+        "غذای خشک اقتصادی"
+      ]
+    },
+    {
+      "name": "مونلو",
+      "nameEn": "Monello",
+      "company": "Monello",
+      "industry": "pet_supply",
+      "country": "ترکیه",
+      "productLines": [
+        "غذای خشک اقتصادی"
+      ]
+    },
+    {
+      "name": "پدیگری",
+      "nameEn": "Pedigree",
+      "company": "Pedigree",
+      "industry": "pet_supply",
+      "country": "آمریکا",
+      "productLines": [
+        "تشویقی سگ",
+        "غذای خشک سگ"
+      ]
+    },
+    {
+      "name": "گلستان بهاران",
+      "nameEn": "Golestan Baharan",
+      "company": "گلستان بهاران",
+      "industry": "seasonal",
+      "country": "ایران",
+      "productLines": [
+        "آجیل",
+        "شیرینی",
+        "خشکبار",
+        "تخم‌مرغ رنگی",
+        "سبزه"
+      ]
+    },
+    {
+      "name": "ماه‌نام",
+      "nameEn": "Mahname",
+      "company": "ماه‌نام",
+      "industry": "seasonal",
+      "country": "ایران",
+      "productLines": [
+        "زولبیا و بامیه",
+        "خرما",
+        "آش و حلیم"
+      ]
+    },
+    {
+      "name": "خنک‌نوش",
+      "nameEn": "Khank Nosh",
+      "company": "خنک‌نوش",
+      "industry": "seasonal",
+      "country": "ایران",
+      "productLines": [
+        "بستنی",
+        "آب معدنی",
+        "نوشابه",
+        "اسنک",
+        "ویفر"
+      ]
+    },
+    {
+      "name": "مدرسه‌یار",
+      "nameEn": "Madreseh Yar",
+      "company": "مدرسه‌یار",
+      "industry": "seasonal",
+      "country": "ایران",
+      "productLines": [
+        "لوازم‌التحریر",
+        "کیف و کوله",
+        "دفتر",
+        "مداد"
+      ]
+    },
+    {
+      "name": "ماهی و سبزه",
+      "nameEn": "Mahi & Sabzeh",
+      "company": "ماهی و سبزه",
+      "industry": "seasonal",
+      "country": "ایران",
+      "productLines": [
+        "ماهی قرمز",
+        "سبزه نوروزی"
+      ]
+    },
+    {
+      "name": "ماه‌عسل",
+      "nameEn": "Mah Asal",
+      "company": "ماه‌عسل",
+      "industry": "seasonal",
+      "country": "ایران",
+      "productLines": [
+        "زولبیا و بامیه",
+        "خرما",
+        "شیرینی سنتی",
+        "آجیل"
+      ]
+    },
+    {
+      "name": "پلاستیک پارس",
+      "nameEn": "Pars Plast",
+      "company": "پلاستیک پارس",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "کیسه زباله",
+        "کیسه فریزر",
+        "سلفون"
+      ]
+    },
+    {
+      "name": "پلاستیک البرز",
+      "nameEn": "Alborz Plast",
+      "company": "پلاستیک البرز",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "کیسه زباله",
+        "کیسه فریزر"
+      ]
+    },
+    {
+      "name": "سلفون ایران",
+      "nameEn": "Cellofan Iran",
+      "company": "سلفون ایران",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "سلفون",
+        "فویل آلومینیوم"
+      ]
+    },
+    {
+      "name": "فویل ایران",
+      "nameEn": "Foil Iran",
+      "company": "فویل ایران",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "فویل آلومینیوم"
+      ]
+    },
+    {
+      "name": "دستکش پاک",
+      "nameEn": "Pak Glove",
+      "company": "دستکش پاک",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "دستکش یکبار مصرف"
+      ]
+    },
+    {
+      "name": "اسفنج پاک",
+      "nameEn": "Pak Sponge",
+      "company": "اسفنج پاک",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "اسفنج",
+        "اسکاچ"
+      ]
+    },
+    {
+      "name": "آیری پلاست",
+      "nameEn": "Airi Plast",
+      "company": "آیری پلاست",
+      "industry": "household",
+      "country": "ایران",
+      "productLines": [
+        "ظروف پلاستیکی",
+        "ملزومات خانه"
+      ]
+    }
+  ]
+}

@@ -72,6 +72,7 @@ const makeBrand = (seed: Seed, index: number): Brand => {
     slug: slugify(nameEn || name),
     country,
     origin,
+    industry: (flags.industry as Brand['industry']) ?? (cats.includes('hygiene') ? 'mixed' : 'food'),
     categoryIds: cats.split(',').map((c) => c.trim()).filter(Boolean),
     productLines: lines.split(',').map((c) => c.trim()).filter(Boolean),
     description: `${name} (${nameEn}) — ${international ? 'برند وارداتی مجاز' : 'تولیدکننده ایرانی'} فعال در گروه‌های ${lines

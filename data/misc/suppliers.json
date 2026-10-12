@@ -1,0 +1,179 @@
+{
+  "suppliers": [
+    {
+      "id": "ms-s-001",
+      "name": "پخش لوازم‌التحریر آریا",
+      "supplierType": "stationery",
+      "country": "ایران",
+      "contactName": "مهدی رضایی",
+      "phone": "021-77452210",
+      "email": "info@aryapart.ir",
+      "paymentTerms": "اعتباری ۳۰ روزه",
+      "leadTimeDays": 3,
+      "rating": 4.5,
+      "brandNames": [
+        "آریا",
+        "کنکو",
+        "شیدکو",
+        "دایان"
+      ],
+      "monthlyVolume": 4200,
+      "fillRate": 96,
+      "notes": "پخش تخصصی نوشت‌افزار تهران و شهرستان."
+    },
+    {
+      "id": "ms-s-002",
+      "name": "بازرگانی انرژی گستر",
+      "supplierType": "battery",
+      "country": "ایران",
+      "contactName": "حسین موسوی",
+      "phone": "021-88901234",
+      "email": "sales@energygostar.ir",
+      "paymentTerms": "نقدی (۳٪ تخفیف)",
+      "leadTimeDays": 2,
+      "rating": 4.3,
+      "brandNames": [
+        "کملیون",
+        "میکروپاور",
+        "تایگر",
+        "دوراسل",
+        "انرژایزر"
+      ],
+      "monthlyVolume": 8600,
+      "fillRate": 94,
+      "notes": "مرجع پخش باتری، فندک و چراغ‌قوه."
+    },
+    {
+      "id": "ms-s-003",
+      "name": "دیجی‌پارت مرکزی",
+      "supplierType": "mobile_accessory",
+      "country": "ایران",
+      "contactName": "سعید کریمی",
+      "phone": "021-66789900",
+      "email": "order@digipart.ir",
+      "paymentTerms": "اعتباری ۴۵ روزه",
+      "leadTimeDays": 2,
+      "rating": 4.7,
+      "brandNames": [
+        "شیائومی",
+        "انکر",
+        "بیسوس",
+        "مک‌دودو",
+        "هوکو"
+      ],
+      "monthlyVolume": 12000,
+      "fillRate": 97,
+      "notes": "پخش لوازم جانبی موبایل و دیجیتال."
+    },
+    {
+      "id": "ms-s-004",
+      "name": "لوازم خانگی پارس",
+      "supplierType": "home_appliance",
+      "country": "ایران",
+      "contactName": "رضا صادقی",
+      "phone": "031-32224455",
+      "email": "info@parshome.ir",
+      "paymentTerms": "چک ۶۰ روزه",
+      "leadTimeDays": 5,
+      "rating": 4.2,
+      "brandNames": [
+        "پارس خزر",
+        "اسنوا",
+        "پاکشوما",
+        "امرسان",
+        "جی‌پلاس"
+      ],
+      "monthlyVolume": 1800,
+      "fillRate": 91,
+      "notes": "توزیع لوازم برقی کوچک خانگی اصفهان."
+    },
+    {
+      "id": "ms-s-005",
+      "name": "پخش ظروف و آشپزخانه زرین",
+      "supplierType": "kitchenware",
+      "country": "ایران",
+      "contactName": "فاطمه نجفی",
+      "phone": "025-37778899",
+      "email": "sales@zarinkitchen.ir",
+      "paymentTerms": "اعتباری ۳۰ روزه",
+      "leadTimeDays": 4,
+      "rating": 4.4,
+      "brandNames": [
+        "پارس اوپال",
+        "چینی زرین ایران",
+        "زرساب",
+        "کاندید",
+        "پیرکس"
+      ],
+      "monthlyVolume": 2600,
+      "fillRate": 93,
+      "notes": "پخش ظروف اوپال، چینی و قابلمه."
+    },
+    {
+      "id": "ms-s-006",
+      "name": "پت‌پخش سراسری",
+      "supplierType": "pet_supply",
+      "country": "ایران",
+      "contactName": "امیرحسین گودرزی",
+      "phone": "021-44556677",
+      "email": "info@petpakhsh.ir",
+      "paymentTerms": "نقدی",
+      "leadTimeDays": 3,
+      "rating": 4.6,
+      "brandNames": [
+        "فیدار پاتیرا",
+        "نوتری‌پت",
+        "رویال کنین",
+        "ویسکاس",
+        "جیمکت"
+      ],
+      "monthlyVolume": 3100,
+      "fillRate": 95,
+      "notes": "توزیع غذای حیوانات خانگی و پت‌شاپ‌ها."
+    },
+    {
+      "id": "ms-s-007",
+      "name": "کالای فصلی بهاران",
+      "supplierType": "seasonal",
+      "country": "ایران",
+      "contactName": "مریم اکبری",
+      "phone": "031-12345678",
+      "email": "info@baharanchala.ir",
+      "paymentTerms": "نقدی",
+      "leadTimeDays": 7,
+      "rating": 4.1,
+      "brandNames": [
+        "گلستان بهاران",
+        "ماه‌نام",
+        "خنک‌نوش",
+        "مدرسه‌یار"
+      ],
+      "monthlyVolume": 5400,
+      "fillRate": 89,
+      "notes": "تأمین اقلام فصلی نوروز، رمضان و بازگشایی مدارس."
+    },
+    {
+      "id": "ms-s-008",
+      "name": "ملزومات مصرفی پارس‌پلاست",
+      "supplierType": "household",
+      "country": "ایران",
+      "contactName": "علی‌رضا جعفری",
+      "phone": "021-33445566",
+      "email": "sales@parsplast.ir",
+      "paymentTerms": "اعتباری ۳۰ روزه",
+      "leadTimeDays": 2,
+      "rating": 4.4,
+      "brandNames": [
+        "پلاستیک پارس",
+        "پلاستیک البرز",
+        "سلفون ایران",
+        "فویل ایران",
+        "دستکش پاک",
+        "اسفنج پاک"
+      ],
+      "monthlyVolume": 9800,
+      "fillRate": 96,
+      "notes": "پخش کیسه زباله، فویل، سلفون و ملزومات مصرفی خانه."
+    }
+  ]
+}

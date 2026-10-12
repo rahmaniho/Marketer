@@ -6,6 +6,9 @@ import { useStore } from '@/store/useStore';
 
 import Home from '@/pages/Home';
 import Catalog from '@/pages/Catalog';
+import DetergentHygiene from '@/pages/DetergentHygiene';
+import MiscMarket from '@/pages/MiscMarket';
+import SnacksMarket from '@/pages/SnacksMarket';
 import ProductDetail from '@/pages/ProductDetail';
 import Login from '@/pages/Login';
 import Cart from '@/pages/Cart';
@@ -59,6 +62,9 @@ const AdminAudit = lazy(() => import('@/pages/admin/AuditAdmin'));
 const AdminIntegrations = lazy(() => import('@/pages/admin/IntegrationsAdmin'));
 const AdminCompliance = lazy(() => import('@/pages/admin/ComplianceAdmin'));
 const AdminSettings = lazy(() => import('@/pages/admin/SettingsAdmin'));
+const AdminDh = lazy(() => import('@/pages/admin/DhAdmin'));
+const AdminMisc = lazy(() => import('@/pages/admin/MiscAdmin'));
+const AdminSnacks = lazy(() => import('@/pages/admin/SnacksAdmin'));
 
 const Loading = ({ label = 'در حال بارگذاری…' }: { label?: string }) => (
   <div className="flex min-h-[40vh] flex-col items-center justify-center gap-3 text-ink-400">
@@ -97,6 +103,9 @@ const App = () => {
             <Route element={<CustomerLayout />}>
               <Route path="/" element={<Home />} />
               <Route path="/catalog" element={<Catalog />} />
+              <Route path="/dh" element={<DetergentHygiene />} />
+              <Route path="/misc" element={<MiscMarket />} />
+              <Route path="/snacks" element={<SnacksMarket />} />
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/brands" element={<Brands />} />
               <Route path="/brand/:id" element={<BrandDetail />} />
@@ -182,6 +191,9 @@ const App = () => {
               <Route path="audit" element={<AdminAudit />} />
               <Route path="integrations" element={<AdminIntegrations />} />
               <Route path="compliance" element={<AdminCompliance />} />
+              <Route path="dh" element={<AdminDh />} />
+              <Route path="misc" element={<AdminMisc />} />
+              <Route path="snacks" element={<AdminSnacks />} />
               <Route path="settings" element={<AdminSettings />} />
               <Route path="supplier-portal" element={<SupplierPortal />} />
             </Route>

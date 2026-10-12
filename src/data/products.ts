@@ -72,6 +72,7 @@ const makeProduct = (seed: Seed): Product => {
     nameEn,
     brandId,
     categoryId,
+    module: 'food',
     barcode: `62${String(1000000000 + i * 7919).slice(0, 11)}`,
     sku: `${categoryId.toUpperCase().slice(0, 4)}-${String(1000 + i)}`,
     unit,

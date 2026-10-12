@@ -18,6 +18,20 @@ const BADGE_MAP: Record<string, { label: string; tone: 'success' | 'warning' | '
   organic: { label: 'ارگانیک', tone: 'success', icon: 'leaf' },
   irc: { label: 'IRC', tone: 'info', icon: 'shield' },
   expiring: { label: 'نزدیک انقضا', tone: 'warning', icon: 'clock' },
+  // ── نشان‌های ماژول شوینده و بهداشتی (کارن سافت)
+  antibacterial: { label: '💧 ضدباکتری', tone: 'info', icon: 'shield' },
+  sensitive: { label: 'مناسب پوست حساس', tone: 'success', icon: 'heart' },
+  natural: { label: '🌿 طبیعی', tone: 'success', icon: 'leaf' },
+  child: { label: '👶 کودک', tone: 'brand', icon: 'baby' },
+  recyclable: { label: 'قابل بازیافت', tone: 'success', icon: 'refresh' },
+  'cruelty-free': { label: 'Cruelty-Free', tone: 'success', icon: 'leaf' },
+  'best-price': { label: '💰 بهترین قیمت', tone: 'warning', icon: 'wallet' },
+  // ── نشان‌های ماژول کالاهای مصرفی (کارن سافت)
+  seasonal: { label: '🎁 فصلی', tone: 'vip', icon: 'gift' },
+  economy: { label: 'اقتصادی', tone: 'success', icon: 'wallet' },
+  premium: { label: 'پریمیوم', tone: 'vip', icon: 'crown' },
+  // ── نشان‌های ماژول تنقلات (کارن سافت)
+  'sugar-free': { label: '🌿 بدون قند', tone: 'success', icon: 'leaf' },
 };
 
 export const ProductCard = ({ product, brand, compact = false }: { product: Product; brand?: Brand; compact?: boolean }) => {

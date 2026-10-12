@@ -1,0 +1,160 @@
+{
+  "offers": [
+    {
+      "id": "mso-001",
+      "title": "آفر ویژه نوروز",
+      "kind": "seasonal",
+      "description": "تخفیف شب عید روی آجیل، شیرینی و کادویی‌ها — سفارش‌های بالای ۲۰ کارتن ارسال رایگان.",
+      "percent": 12,
+      "code": "NOWRUZ26",
+      "categoryIds": [
+        "ms-c-sea"
+      ],
+      "minCartAmount": 20000000,
+      "minQty": 5,
+      "days": 45,
+      "color": "#a855f7",
+      "icon": "gift"
+    },
+    {
+      "id": "mso-002",
+      "title": "جشنواره بازگشایی مدارس",
+      "kind": "seasonal",
+      "description": "پک‌های لوازم‌التحریر و کوله با تخفیف مهرماه — ویژه فروشگاه‌های نوشت‌افزار و سوپرمارکت.",
+      "percent": 10,
+      "code": "SCHOOL26",
+      "categoryIds": [
+        "ms-c-sea",
+        "ms-c-sta"
+      ],
+      "minCartAmount": 15000000,
+      "minQty": 8,
+      "days": 40,
+      "color": "#6366f1",
+      "icon": "paper"
+    },
+    {
+      "id": "mso-003",
+      "title": "آفر ماه مبارک رمضان",
+      "kind": "seasonal",
+      "description": "تخفیف زولبیا و بامیه، خرما و اقلام سفره افطار.",
+      "percent": 8,
+      "code": "RAMADAN26",
+      "categoryIds": [
+        "ms-c-sea"
+      ],
+      "minCartAmount": 10000000,
+      "minQty": 4,
+      "days": 30,
+      "color": "#14b8a6",
+      "icon": "moon"
+    },
+    {
+      "id": "mso-004",
+      "title": "تخفیف تابستانه خنک‌نوش",
+      "kind": "timed",
+      "description": "آب معدنی، نوشابه و بستنی با تخفیف فصل گرما.",
+      "percent": 7,
+      "code": "SUMMER26",
+      "categoryIds": [
+        "ms-c-sea"
+      ],
+      "minCartAmount": 8000000,
+      "minQty": 10,
+      "days": 60,
+      "color": "#06b6d4",
+      "icon": "star"
+    },
+    {
+      "id": "mso-005",
+      "title": "پله حجمی باتری و فندک",
+      "kind": "volume",
+      "description": "از ۲۰ کارتن به بالا ۶٪ + از ۶۰ کارتن ۱۰٪ تخفیف حجمی.",
+      "percent": 10,
+      "code": "POWER26",
+      "categoryIds": [
+        "ms-c-bat"
+      ],
+      "minCartAmount": 5000000,
+      "minQty": 20,
+      "days": 90,
+      "color": "#f59e0b",
+      "icon": "zap"
+    },
+    {
+      "id": "mso-006",
+      "title": "آفر مشتریان VIP لوازم خانگی",
+      "kind": "vip",
+      "description": "قیمت ویژه VIP برای خریداران عمده لوازم برقی کوچک.",
+      "percent": 9,
+      "code": "VIPHOME",
+      "categoryIds": [
+        "ms-c-app"
+      ],
+      "minCartAmount": 50000000,
+      "minQty": 2,
+      "days": 120,
+      "color": "#be185d",
+      "icon": "crown",
+      "vipOnly": true
+    },
+    {
+      "id": "mso-007",
+      "title": "تسویه نقدی کالاهای مصرفی",
+      "kind": "cash",
+      "description": "۴٪ تخفیف اضافه برای تسویه نقدی سفارش‌های ماژول کالاهای مصرفی.",
+      "percent": 4,
+      "code": "CASHMISC",
+      "minCartAmount": 12000000,
+      "minQty": 3,
+      "days": 180,
+      "color": "#16a34a",
+      "icon": "wallet"
+    },
+    {
+      "id": "mso-008",
+      "title": "اولین سفارش پخش‌کنندگان",
+      "kind": "first-order",
+      "description": "هدیه خوش‌آمدگویی ۷٪ برای اولین سفارش عمده فروشگاه‌ها.",
+      "percent": 7,
+      "code": "HELLO26",
+      "minCartAmount": 6000000,
+      "minQty": 4,
+      "days": 120,
+      "color": "#0ea5e9",
+      "icon": "rocket"
+    },
+    {
+      "id": "mso-009",
+      "title": "آفر حیوانات خانگی",
+      "kind": "timed",
+      "description": "تخفیف غذای خشک سگ و گربه برای پت‌شاپ‌ها و کلینیک‌های دامپزشکی.",
+      "percent": 6,
+      "code": "PET26",
+      "categoryIds": [
+        "ms-c-pet"
+      ],
+      "minCartAmount": 18000000,
+      "minQty": 3,
+      "days": 75,
+      "color": "#f97316",
+      "icon": "heart"
+    },
+    {
+      "id": "mso-010",
+      "title": "جشنواره لوازم جانبی موبایل",
+      "kind": "timed",
+      "description": "پاوربانک، شارژر و کابل با تخفیف ویژه موبایل‌فروشی‌ها.",
+      "percent": 8,
+      "code": "MOBILE26",
+      "categoryIds": [
+        "ms-c-mob"
+      ],
+      "minCartAmount": 25000000,
+      "minQty": 6,
+      "days": 50,
+      "color": "#06b6d4",
+      "icon": "phone"
+    }
+  ]
+}

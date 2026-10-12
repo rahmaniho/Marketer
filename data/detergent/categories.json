@@ -1,0 +1,44 @@
+{
+  "$comment": "دسته‌بندی‌های ماژول شوینده — ساختار درختی دوسطی (Mock Data کارن سافت)",
+  "roots": [
+    {
+      "id": "dh-clean",
+      "name": "شوینده و پاک‌کننده",
+      "nameEn": "Detergents & Cleaners",
+      "icon": "spray",
+      "color": "#0ea5e9",
+      "description": "پودر و مایع لباسشویی، ظرفشویی، سفیدکننده، جرم‌گیر، لکه‌بر و پاک‌کننده‌های تخصصی"
+    },
+    {
+      "id": "dh-home",
+      "name": "خانه و آشپزخانه",
+      "nameEn": "Home & Kitchen",
+      "icon": "package",
+      "color": "#14b8a6",
+      "description": "دستکش، اسفنج، کیسه زباله، فویل، سلفون، ظروف یکبار مصرف و ملزومات خانگی"
+    }
+  ],
+  "children": [
+    { "id": "dh-powder-machine", "parentId": "dh-clean", "name": "پودر ماشین لباسشویی", "nameEn": "Machine Laundry Powder", "icon": "box", "color": "#0ea5e9", "description": "پودر ماشین لباسشویی فول و کم‌کف، آنزیم‌دار و ضدحساسیت" },
+    { "id": "dh-liquid-laundry", "parentId": "dh-clean", "name": "مایع لباسشویی", "nameEn": "Liquid Laundry Detergent", "icon": "bottle", "color": "#0ea5e9", "description": "مایع لباسشویی ماشینی و دستی، کنسانتره و معمولی" },
+    { "id": "dh-dishwash", "parentId": "dh-clean", "name": "مایع ظرفشویی", "nameEn": "Dishwashing Liquid", "icon": "droplet", "color": "#0284c7", "description": "مایع و ژل ظرفشویی دستی و ماشینی، نمک و جلادهنده" },
+    { "id": "dh-powder-hand", "parentId": "dh-clean", "name": "پودر دستی", "nameEn": "Hand Wash Powder", "icon": "box", "color": "#0ea5e9", "description": "پودر لباسشویی دستی و پودر صابون" },
+    { "id": "dh-bleach", "parentId": "dh-clean", "name": "سفیدکننده", "nameEn": "Bleach", "icon": "sparkle", "color": "#38bdf8", "description": "سفیدکننده و ضدعفونی‌کننده کلردار و بدون کلر" },
+    { "id": "dh-descaler", "parentId": "dh-clean", "name": "جرم‌گیر", "nameEn": "Descaler", "icon": "droplet", "color": "#0284c7", "description": "جرم‌گیر سرویس بهداشتی، رسوب‌گیر لوله و ماشین" },
+    { "id": "dh-stain", "parentId": "dh-clean", "name": "لکه‌بر", "nameEn": "Stain Remover", "icon": "sparkles", "color": "#06b6d4", "description": "لکه‌بر لباس، فرش و سطوح — پودری، ژل و اسپری" },
+    { "id": "dh-softener", "parentId": "dh-clean", "name": "نرم‌کننده", "nameEn": "Fabric Softener", "icon": "flower", "color": "#22d3ee", "description": "نرم‌کننده و خوشبوکننده حوله و لباس" },
+    { "id": "dh-carpet", "parentId": "dh-clean", "name": "شامپو فرش", "nameEn": "Carpet Shampoo", "icon": "spray", "color": "#0ea5e9", "description": "شامپو فرش، مبل و موکت — فوم و مایع" },
+    { "id": "dh-glass", "parentId": "dh-clean", "name": "شیشه‌شور", "nameEn": "Glass Cleaner", "icon": "sparkle", "color": "#7dd3fc", "description": "شیشه‌شوی و پاک‌کننده سطوح صیقلی" },
+    { "id": "dh-degreaser", "parentId": "dh-clean", "name": "چربی‌زدا", "nameEn": "Degreaser", "icon": "bottle", "color": "#0284c7", "description": "چربی‌زدا و پاک‌کننده آشپزخانه، اجاق و هود" },
+    { "id": "dh-surface-disinfect", "parentId": "dh-clean", "name": "ضدعفونی‌کننده سطوح", "nameEn": "Surface Disinfectant", "icon": "shield", "color": "#0ea5e9", "description": "ضدعفونی‌کننده و آنتی‌باکتریال سطوح خانگی و بیمارستانی" },
+
+    { "id": "dh-glove", "parentId": "dh-home", "name": "دستکش", "nameEn": "Gloves", "icon": "user", "color": "#14b8a6", "description": "دستکش ظرفشویی، نایلونی و یکبار مصرف" },
+    { "id": "dh-sponge", "parentId": "dh-home", "name": "اسفنج", "nameEn": "Sponge", "icon": "box", "color": "#14b8a6", "description": "اسفنج و سیم ظرفشویی، پد تمیزکننده" },
+    { "id": "dh-trash-bag", "parentId": "dh-home", "name": "کیسه زباله", "nameEn": "Trash Bag", "icon": "package", "color": "#2dd4bf", "description": "کیسه زباله رولی و پرفراژی در سایزهای مختلف" },
+    { "id": "dh-foil", "parentId": "dh-home", "name": "فویل آلومینیوم", "nameEn": "Aluminum Foil", "icon": "sheet", "color": "#14b8a6", "description": "فویل آلومینیوم آشپزخانه و صنعتی" },
+    { "id": "dh-freezer-bag", "parentId": "dh-home", "name": "کیسه فریزر", "nameEn": "Freezer Bag", "icon": "package", "color": "#2dd4bf", "description": "کیسه فریزر و زیپ‌دار" },
+    { "id": "dh-wrap", "parentId": "dh-home", "name": "سلفون", "nameEn": "Plastic Wrap", "icon": "sheet", "color": "#14b8a6", "description": "سلفون بسته‌بندی و نایلون فریزر" },
+    { "id": "dh-disposable", "parentId": "dh-home", "name": "ظرف یکبار مصرف", "nameEn": "Disposable Containers", "icon": "box", "color": "#2dd4bf", "description": "ظرف، لیوان، قاشق و چنگال یکبار مصرف" },
+    { "id": "dh-plastic", "parentId": "dh-home", "name": "نایلون", "nameEn": "Plastic & Nylon", "icon": "package", "color": "#14b8a6", "description": "نایلون، پلاستیک بسته‌بندی و کیسه فروشگاهی" }
+  ]
+}
