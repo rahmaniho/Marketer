@@ -1,0 +1,33 @@
+{
+  "$comment": "دسته‌بندی‌های ماژول بهداشتی — ساختار درختی دوسطی (Mock Data کارن سافت)",
+  "roots": [
+    {
+      "id": "dh-care",
+      "name": "بهداشتی و آرایشی",
+      "nameEn": "Hygiene & Personal Care",
+      "icon": "soap",
+      "color": "#ec4899",
+      "description": "صابون، شامپو، مراقبت مو، بهداشت دهان و دندان، بهداشت بانوان و کودک، محصولات آرایشی پایه"
+    }
+  ],
+  "children": [
+    { "id": "dh-soap", "parentId": "dh-care", "name": "صابون", "nameEn": "Soap", "icon": "soap", "color": "#ec4899", "description": "صابون حمام، صابون دست و صابون لباسشویی" },
+    { "id": "dh-body-wash", "parentId": "dh-care", "name": "شامپو بدن", "nameEn": "Body Wash", "icon": "droplet", "color": "#f472b6", "description": "ژل و شامپو بدن، لوفا و کرم‌شوی" },
+    { "id": "dh-shampoo", "parentId": "dh-care", "name": "شامپو مو", "nameEn": "Hair Shampoo", "icon": "bottle", "color": "#ec4899", "description": "شامپو سر خانواده، ضد شوره، معمولی و تخصصی" },
+    { "id": "dh-conditioner", "parentId": "dh-care", "name": "نرم‌کننده مو", "nameEn": "Hair Conditioner", "icon": "flower", "color": "#f472b6", "description": "نرم‌کننده و ماسک مو، سرم و اسپری مو" },
+    { "id": "dh-toothpaste", "parentId": "dh-care", "name": "خمیردندان", "nameEn": "Toothpaste", "icon": "sparkle", "color": "#fb7185", "description": "خمیردندان ضدپوسیدگی، سفیدکننده، ضدحساسیت و کودک" },
+    { "id": "dh-toothbrush", "parentId": "dh-care", "name": "مسواک", "nameEn": "Toothbrush", "icon": "check", "color": "#f472b6", "description": "مسواک بزرگسال، کودک و بین‌دندانی" },
+    { "id": "dh-mouthwash", "parentId": "dh-care", "name": "دهان‌شویه", "nameEn": "Mouthwash", "icon": "droplet", "color": "#ec4899", "description": "دهان‌شویه ضدباکتری، طراوت‌بخش و مخصوص کودک" },
+    { "id": "dh-tissue", "parentId": "dh-care", "name": "دستمال کاغذی", "nameEn": "Facial Tissue", "icon": "paper", "color": "#f9a8d4", "description": "دستمال جعبه‌ای، رولی، حوله‌ای و دستمال توالت" },
+    { "id": "dh-wet-wipes", "parentId": "dh-care", "name": "دستمال مرطوب", "nameEn": "Wet Wipes", "icon": "paper", "color": "#ec4899", "description": "دستمال مرطوب آرایشی، بهداشتی، کودک و ضدعفونی" },
+    { "id": "dh-diaper", "parentId": "dh-care", "name": "پوشک بچه", "nameEn": "Baby Diaper", "icon": "baby", "color": "#f472b6", "description": "پوشک بچه و بزرگسال در سایزهای مختلف" },
+    { "id": "dh-pad", "parentId": "dh-care", "name": "نوار بهداشتی", "nameEn": "Sanitary Pad", "icon": "heart", "color": "#fb7185", "description": "نوار بهداشتی بالدار، پد روزانه و تامپون" },
+    { "id": "dh-cotton-pad", "parentId": "dh-care", "name": "پد آرایشی", "nameEn": "Cotton Pad", "icon": "paper", "color": "#f9a8d4", "description": "پد پنبه‌ای آرایشی و پاک‌کننده" },
+    { "id": "dh-hand-gel", "parentId": "dh-care", "name": "ژل ضدعفونی دست", "nameEn": "Hand Sanitizer Gel", "icon": "droplet", "color": "#f472b6", "description": "ژل، فوم و اسپری ضدعفونی‌کننده دست" },
+    { "id": "dh-mask", "parentId": "dh-care", "name": "ماسک", "nameEn": "Face Mask", "icon": "shield", "color": "#ec4899", "description": "ماسک تنفسی، ماسک صورت و ماسک مو" },
+    { "id": "dh-disinfectant", "parentId": "dh-care", "name": "محلول ضدعفونی", "nameEn": "Disinfectant Solution", "icon": "shield", "color": "#fb7185", "description": "محلول ضدعفونی‌کننده دست و سطوح، الکل طبی" },
+    { "id": "dh-cotton", "parentId": "dh-care", "name": "پنبه و گوش‌پاک‌کن", "nameEn": "Cotton & Ear Buds", "icon": "flower", "color": "#f9a8d4", "description": "پنبه هیدروفیل، گوش‌پاک‌کن و پد پنبه‌ای" },
+    { "id": "dh-shaving", "parentId": "dh-care", "name": "تیغ و اصلاح", "nameEn": "Shaving & Razors", "icon": "sparkle", "color": "#f472b6", "description": "تیغ اصلاح، ژل و فوم اصلاح، افترشیو" },
+    { "id": "dh-cosmetics", "parentId": "dh-care", "name": "محصولات آرایشی پایه", "nameEn": "Basic Cosmetics", "icon": "sparkles", "color": "#ec4899", "description": "کرم، لوسیون، ضدآفتاب، بالم لب و محصولات مراقبت پوست" }
+  ]
+}

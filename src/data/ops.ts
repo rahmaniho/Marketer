@@ -317,6 +317,7 @@ export const suppliers: Supplier[] = [
   name: s[0] as string,
   brandIds: [s[1] as string],
   country: s[2] as string,
+  supplierType: 'food' as Supplier['supplierType'],
   contactName: s[3] as string,
   phone: s[4] as string,
   email: s[5] as string,

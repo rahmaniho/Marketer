@@ -1,0 +1,45 @@
+{
+  "$comment": "کمپین‌ها و آفرهای فصلی ماژول بهداشتی (Mock Data — کارن سافت)",
+  "offers": [
+    {
+      "id": "hho-001", "title": "جشنواره بهداشت بانوان — ۹٪ تخفیف",
+      "kind": "seasonal", "description": "۹٪ تخفیف روی نوار بهداشتی، پد و محصولات بهداشتی بانوان.",
+      "percent": 9, "code": "WOMEN9",
+      "categoryIds": ["dh-pad", "dh-cotton-pad", "dh-cosmetics", "dh-care"],
+      "minCartAmount": 6000000, "minQty": 3, "days": 50, "color": "#ec4899", "icon": "heart", "vipOnly": false
+    },
+    {
+      "id": "hho-002", "title": "ست بهداشت مادر و کودک — ۱۰٪ تخفیف",
+      "kind": "bundle", "description": "با خرید هم‌زمان پوشک، دستمال مرطوب و شامپو بچه، ۱۰٪ تخفیف باندل اعمال می‌شود.",
+      "percent": 10, "code": "BABY10",
+      "categoryIds": ["dh-diaper", "dh-wet-wipes", "dh-shampoo", "dh-soap"],
+      "minCartAmount": 7000000, "minQty": 3, "days": 75, "color": "#f472b6", "icon": "baby", "vipOnly": false
+    },
+    {
+      "id": "hho-003", "title": "کمپین مراقبت پوست زمستان — ۸٪ تخفیف",
+      "kind": "seasonal", "description": "کرم، لوسیون و مرطوب‌کننده‌های زمستانی با ۸٪ تخفیف.",
+      "percent": 8, "code": "SKIN8",
+      "categoryIds": ["dh-cosmetics", "dh-body-wash"],
+      "minCartAmount": 5000000, "minQty": 2, "days": 55, "color": "#8b5cf6", "icon": "sparkle", "vipOnly": false
+    },
+    {
+      "id": "hho-004", "title": "تخفیف نقدی ۳٪ تسویه فوری بهداشتی",
+      "kind": "cash", "description": "تسویه نقدی سفارش‌های بهداشتی = ۳٪ تخفیف اضافه.",
+      "percent": 3, "code": "HHCASH3",
+      "categoryIds": ["dh-care"], "minCartAmount": 4000000, "minQty": 0, "days": 120, "color": "#16a34a", "icon": "wallet", "vipOnly": false
+    },
+    {
+      "id": "hho-005", "title": "خرید کارتنی دستمال و سلولزی — ۱۱٪ تخفیف",
+      "kind": "volume", "description": "حداقل ۲۰ کارتن از اقلام سلولزی: ۱۱٪ تخفیف حجمی.",
+      "percent": 11, "code": "TISSUE11",
+      "categoryIds": ["dh-tissue", "dh-wet-wipes"], "minCartAmount": 0, "minQty": 20, "days": 90, "color": "#0ea5e9", "icon": "layers", "vipOnly": false
+    },
+    {
+      "id": "hho-006", "title": "آفر VIP داروخانه‌ها — ۶٪ تخفیف",
+      "kind": "vip", "description": "ویژه مشتریان VIP داروخانه‌ای: ۶٪ تخفیف تکمیلی روی محصولات تخصصی.",
+      "percent": 6, "code": "HHVIP6",
+      "categoryIds": ["dh-cosmetics", "dh-disinfectant", "dh-hand-gel"],
+      "minCartAmount": 20000000, "minQty": 8, "days": 150, "color": "#7c3aed", "icon": "crown", "vipOnly": true
+    }
+  ]
+}

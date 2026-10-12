@@ -1,0 +1,47 @@
+{
+  "$comment": "تأمین‌کنندگان و پخش‌کنندگان شوینده (Mock Data — کارن سافت)",
+  "suppliers": [
+    {
+      "id": "dhsup-001", "name": "گلپخش اول", "supplierType": "mixed", "country": "ایران",
+      "contactName": "واحد فروش", "phone": "021-88776655", "email": "sales@golpakhsh.example",
+      "paymentTerms": "تسویه ۳۰ روزه", "leadTimeDays": 2, "rating": 4.7,
+      "brandNames": ["گلرنگ", "اومو", "پرسیل", "پریمکس"], "monthlyVolume": 9500000000, "fillRate": 96,
+      "notes": "توزیع محصولات غذایی، آرایشی و بهداشتی و شوینده از سال ۱۳۷۹."
+    },
+    {
+      "id": "dhsup-002", "name": "بازرگانی روحی", "supplierType": "detergent", "country": "ایران",
+      "contactName": "آقای روحی", "phone": "021-55443322", "email": "info@rouhi.example",
+      "paymentTerms": "پیش‌پرداخت ۵۰٪", "leadTimeDays": 12, "rating": 4.5,
+      "brandNames": ["فینیش", "فیری", "پریل", "ونیش", "کالگون", "پورچوز"], "monthlyVolume": 6200000000, "fillRate": 91,
+      "notes": "واردات و پخش عمده شوینده و بهداشتی از اروپا و ترکیه."
+    },
+    {
+      "id": "dhsup-003", "name": "پخش مواد شوینده مه من", "supplierType": "detergent", "country": "ایران",
+      "contactName": "واحد پخش", "phone": "011-33221100", "email": "info@mahman.example",
+      "paymentTerms": "نقدی/چک ۳۰ روزه", "leadTimeDays": 3, "rating": 4.2,
+      "brandNames": ["مه من"], "monthlyVolume": 3100000000, "fillRate": 88,
+      "notes": "عمده‌فروشی مایع ظرفشویی و دستشویی فله — مناسب ارگان‌ها و پخش‌کنندگان."
+    },
+    {
+      "id": "dhsup-004", "name": "پرتو گستر کازیوه", "supplierType": "hygiene", "country": "ایران",
+      "contactName": "آقای کازیوه", "phone": "087-33112233", "email": "info@pgkaziveh.example",
+      "paymentTerms": "تسویه ۴۵ روزه", "leadTimeDays": 4, "rating": 4.6,
+      "brandNames": ["مولفیکس", "مولپد", "پاپیون", "تنو"], "monthlyVolume": 4800000000, "fillRate": 93,
+      "notes": "پخش انحصاری محصولات پارس حیات در استان‌های کردستان، کرمانشاه و ایلام."
+    },
+    {
+      "id": "dhsup-005", "name": "پخش شوینده و بهداشتی هماوش", "supplierType": "mixed", "country": "ایران",
+      "contactName": "واحد فروش", "phone": "051-33445566", "email": "info@homavash.example",
+      "paymentTerms": "نقدی", "leadTimeDays": 2, "rating": 4.1,
+      "brandNames": ["پاکسان", "کف", "تولی پرس"], "monthlyVolume": 2700000000, "fillRate": 85,
+      "notes": "عمده‌فروشی شوینده و بهداشتی — مشهد و خراسان رضوی."
+    },
+    {
+      "id": "dhsup-006", "name": "شرکت قاسم ایران", "supplierType": "mixed", "country": "ایران",
+      "contactName": "واحد بازرگانی", "phone": "021-91002000", "email": "info@ghasemirani.example",
+      "paymentTerms": "تسویه ۶۰ روزه", "leadTimeDays": 5, "rating": 4.8,
+      "brandNames": ["کولگیت", "نیوآ", "لورآل", "گارنیر", "داو"], "monthlyVolume": 12000000000, "fillRate": 97,
+      "notes": "توزیع سراسری محصولات آرایشی و بهداشتی، ضدعفونی‌کننده و سلولزی."
+    }
+  ]
+}

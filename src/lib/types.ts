@@ -5,11 +5,84 @@
 
 export type Origin = 'iran' | 'international';
 
-export type SalesUnit = 'کارتن' | 'شرینک' | 'پالت' | 'بسته' | 'کیسه' | 'حلقه';
+export type SalesUnit = 'کارتن' | 'شرینک' | 'پالت' | 'بسته' | 'کیسه' | 'حلقه' | 'گالن' | 'عدد';
 
 export type LicenseStatus = 'valid' | 'expiring' | 'pending' | 'expired';
 
 export type LicenseKind = 'IRC' | 'وزارت بهداشت' | 'حلال' | 'ارگانیک' | 'استاندارد';
+
+/** صنعت فعالیت برند/تأمین‌کننده — ماژول شوینده و بهداشتی */
+export type Industry = 'food' | 'detergent' | 'hygiene' | 'mixed';
+
+/** ماژول‌های کاتالوگ پلتفرم (قابل فعال/غیرفعال با Feature Flag) */
+export type ModuleKey = 'food' | 'detergent' | 'hygiene';
+
+export type PackagingKind =
+  | 'بطری'
+  | 'گالن'
+  | 'ساشه'
+  | 'کارتن'
+  | 'فله‌ای'
+  | 'پمپی'
+  | 'تیوپی'
+  | 'قوطی'
+  | 'اسپری'
+  | 'بسته'
+  | 'رول';
+
+/** نوع پوست برای محصولات بهداشتی */
+export type SkinType = 'normal' | 'خشک' | 'چرب' | 'مختلط' | 'حساس' | 'همه انواع';
+
+/**
+ * ویژگی‌های تخصصی صنف شوینده و بهداشتی
+ * فقط روی محصولات ماژول شوینده/بهداشتی پر می‌شود.
+ */
+export interface DetergentHygieneSpec {
+  /** حجم (میلی‌لیتر) */
+  volumeMl?: number;
+  /** وزن (گرم) */
+  weightGr?: number;
+  /** رایحه */
+  fragrance?: string;
+  /** غلظت (مثلاً ۴×) */
+  concentration?: string;
+  /** اسیدیته */
+  ph?: number;
+  /** نوع پوست مناسب (بهداشتی) */
+  skinType?: SkinType;
+  /** ضدباکتری */
+  isAntibacterial?: boolean;
+  /** دارای سفیدکننده */
+  hasBleach?: boolean;
+  /** بسته‌بندی */
+  packaging?: PackagingKind;
+  /** گواهی‌ها: ISO، بهداشت، استاندارد ملی و … */
+  certification?: string[];
+  /** نوع کاربرد: لباسشویی، ظرفشویی، سطوح، بدن، مو، دهان و دندان */
+  useCases?: string[];
+  /** مناسب پوست حساس */
+  sensitiveSkin?: boolean;
+  /** بدون رنگ */
+  colorFree?: boolean;
+  /** ایمن برای کودک */
+  childSafe?: boolean;
+  /** عدم تست روی حیوانات */
+  crueltyFree?: boolean;
+  /** قابل بازیافت */
+  recyclable?: boolean;
+  /** طبیعی/گیاهی */
+  natural?: boolean;
+  /** بسته‌بندی عمده موجود */
+  bulkPack?: ('کارتن' | 'شرینک' | 'پالت')[];
+  /** تعداد در هر شرینک (برای قیمت‌گذاری چندواحدی) */
+  unitsPerShrink?: number;
+  /** قدرت پاک‌کنندگی ۱ تا ۵ (برای مقایسه فنی) */
+  cleaningPower?: number;
+  /** نگهداری: عادی | شیمیایی | زنجیره سرد */
+  storage?: 'عادی' | 'شیمیایی' | 'زنجیره سرد';
+  /** هشدارهای ایمنی */
+  safety?: string;
+}
 
 export interface Brand {
   id: string;
@@ -21,6 +94,8 @@ export interface Brand {
   /** کشور مبدأ */
   country: string;
   origin: Origin;
+  /** صنعت فعالیت برند (غذایی / شوینده / بهداشتی / مخلوط) */
+  industry: Industry;
   /** شناسه دسته‌های اصلی فعالیت */
   categoryIds: string[];
   /** خطوط تولید / گروه محصولات */
@@ -69,6 +144,22 @@ export interface PriceTier {
   label: string;
 }
 
+export type ProductBadge =
+  | 'halal'
+  | 'organic'
+  | 'imported'
+  | 'irc'
+  | 'new'
+  | 'bestseller'
+  | 'expiring'
+  | 'antibacterial'
+  | 'sensitive'
+  | 'natural'
+  | 'child'
+  | 'recyclable'
+  | 'cruelty-free'
+  | 'best-price';
+
 export interface Product {
   id: string;
   /** نام فارسی کالا */
@@ -76,6 +167,10 @@ export interface Product {
   nameEn: string;
   brandId: string;
   categoryId: string;
+  /** ماژول مالک کالا (Feature Flag روی همین فیلد فیلتر می‌کند) */
+  module: ModuleKey;
+  /** ویژگی‌های تخصصی شوینده و بهداشتی (فقط برای محصولات آن ماژول) */
+  dh?: DetergentHygieneSpec;
   barcode: string;
   sku: string;
   /** واحد فروش عمده */
@@ -100,7 +195,7 @@ export interface Product {
   paletteQty: number;
   country: string;
   images: { seed: string; hue: string; icon: string }[];
-  badges: ('halal' | 'organic' | 'imported' | 'irc' | 'new' | 'bestseller' | 'expiring')[];
+  badges: ProductBadge[];
   tags: string[];
   description: string;
   rating: number;
@@ -146,6 +241,62 @@ export interface Offer {
   color: string;
   icon: string;
   isActive: boolean;
+}
+
+/**
+ * موجودیت جدید انطباق و مجوز — ماژول شوینده و بهداشتی
+ * پروانه بهداشت، پروانه ساخت، IRC، استاندارد ملی (ISIRI) و گواهی‌ها
+ */
+export type ComplianceKind =
+  | 'پروانه بهداشت'
+  | 'پروانه ساخت'
+  | 'IRC'
+  | 'استاندارد ملی'
+  | 'حلال'
+  | 'ارگانیک'
+  | 'Cruelty-Free'
+  | 'Child-safe'
+  | 'Recyclable';
+
+export interface Compliance {
+  id: string;
+  title: string;
+  kind: ComplianceKind;
+  /** شماره مجوز / کد IRC */
+  refCode: string;
+  /** صادرکننده: سازمان غذا و دارو، وزارت صمت، ISIRI و … */
+  issuer: string;
+  brandId?: string;
+  productId?: string;
+  /** ماژول مرتبط */
+  module: ModuleKey;
+  issuedAt: string;
+  expiresAt: string;
+  status: LicenseStatus;
+  note: string;
+}
+
+/** باندل پیشنهادی (ست شوینده + بهداشتی) */
+export interface Bundle {
+  id: string;
+  title: string;
+  description: string;
+  module: ModuleKey;
+  productIds: string[];
+  /** درصد تخفیف اضافه باندل */
+  bundleDiscountPercent: number;
+  /** تگ فصلی: نوروز، خانه‌تکانی، بازگشایی مدارس */
+  seasonalTag?: string;
+  icon: string;
+  color: string;
+  isActive: boolean;
+}
+
+/** پرچم‌های فعال/غیرفعال ماژول‌ها (Feature Flags) */
+export interface ModuleFlags {
+  food: boolean;
+  detergent: boolean;
+  hygiene: boolean;
 }
 
 export type CustomerTier = 'A' | 'B' | 'C' | 'VIP';
@@ -323,6 +474,8 @@ export interface Supplier {
   name: string;
   brandIds: string[];
   country: string;
+  /** نوع تأمین‌کننده: غذایی / شوینده / بهداشتی / مخلوط */
+  supplierType: Industry;
   contactName: string;
   phone: string;
   email: string;
@@ -635,4 +788,6 @@ export interface Settings {
   expiryWarnDays: number;
   settlementTerms: string[];
   businessModels: string[];
+  /** ماژول‌های فعال کاتالوگ (Feature Flags) — ماژول شوینده و بهداشتی را می‌توان مستقل خاموش کرد */
+  modules: ModuleFlags;
 }

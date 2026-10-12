@@ -1,0 +1,89 @@
+{
+  "$comment": "مجوزها و استانداردهای ماژول بهداشتی — پروانه بهداشت، IRC، حلال، ارگانیک، Child-safe (Mock Data — کارن سافت)",
+  "items": [
+    {
+      "id": "hhc-001", "title": "پروانه بهداشت ساخت — محصولات مای",
+      "kind": "پروانه بهداشت", "refCode": "HW-61/33410", "issuer": "سازمان غذا و دارو",
+      "brandName": "مای", "module": "hygiene",
+      "issuedAt": "2025-02-01", "expiresAt": "2028-01-31", "status": "valid",
+      "note": "شامل شامپو، صابون و کرم‌های مراقبتی."
+    },
+    {
+      "id": "hhc-002", "title": "پروانه بهداشت — شامپو بچه فیروز",
+      "kind": "پروانه بهداشت", "refCode": "HW-55/11208", "issuer": "سازمان غذا و دارو",
+      "brandName": "فیروز", "module": "hygiene",
+      "issuedAt": "2023-06-12", "expiresAt": "2026-06-11", "status": "expiring",
+      "note": "۳ ماه تا انقضا — فرایند تمدید آغاز شده."
+    },
+    {
+      "id": "hhc-003", "title": "ثبت کالا (IRC) — هد اند شولدرز / داو",
+      "kind": "IRC", "refCode": "IRC-25200877", "issuer": "سازمان غذا و دارو",
+      "brandName": "هد اند شولدرز", "module": "hygiene",
+      "issuedAt": "2025-06-10", "expiresAt": "2027-06-09", "status": "valid",
+      "note": "کالای وارداتی دارای اصالت‌نامه و لیبل فارسی."
+    },
+    {
+      "id": "hhc-004", "title": "استاندارد ملی ایران — خمیردندان (ISIRI 1583)",
+      "kind": "استاندارد ملی", "refCode": "ISIRI 1583", "issuer": "سازمان ملی استاندارد ایران",
+      "brandName": "پونه", "module": "hygiene",
+      "issuedAt": "2024-10-20", "expiresAt": "2027-10-19", "status": "valid",
+      "note": "آزمون فلوراید، سایندگی و PH."
+    },
+    {
+      "id": "hhc-005", "title": "نماد ایمنی کودک (Child-safe) — محصولات فیروز",
+      "kind": "Child-safe", "refCode": "CS-4412", "issuer": "انجمن حمایت از حقوق مصرف‌کننده",
+      "brandName": "فیروز", "module": "hygiene",
+      "issuedAt": "2025-03-01", "expiresAt": "2028-02-29", "status": "valid",
+      "note": "درب ایمن کودک و فرمول بدون اشک."
+    },
+    {
+      "id": "hhc-006", "title": "گواهی ارگانیک — محصولات گیاهی شون",
+      "kind": "ارگانیک", "refCode": "ORG-2231", "issuer": "موسسه استاندارد و تحقیقات صنعتی ایران",
+      "brandName": "شون", "module": "hygiene",
+      "issuedAt": "2024-12-05", "expiresAt": "2026-12-04", "status": "valid",
+      "note": "مواد مؤثره گیاهی با منشأ ارگانیک."
+    },
+    {
+      "id": "hhc-007", "title": "گواهی عدم تست روی حیوانات (Cruelty-Free) — سینره",
+      "kind": "Cruelty-Free", "refCode": "CF-891", "issuer": "Leaping Bunny (معتبرسازی داخلی)",
+      "brandName": "سینره", "module": "hygiene",
+      "issuedAt": "2025-01-15", "expiresAt": "2027-01-14", "status": "valid",
+      "note": "کل زنجیره تأمین پایش می‌شود."
+    },
+    {
+      "id": "hhc-008", "title": "پروانه ساخت — نوار بهداشتی مولپد",
+      "kind": "پروانه ساخت", "refCode": "IM-58/9902", "issuer": "وزارت صنعت، معدن و تجارت",
+      "brandName": "مولپد", "module": "hygiene",
+      "issuedAt": "2024-05-08", "expiresAt": "2027-05-07", "status": "valid",
+      "note": "خط تولید تمام‌اتوماتیک با کنترل کیفیت در‌خط."
+    },
+    {
+      "id": "hhc-009", "title": "پروانه بهداشت — محلول ضدعفونی‌کننده باریج اسانس",
+      "kind": "پروانه بهداشت", "refCode": "HW-62/41002", "issuer": "سازمان غذا و دارو",
+      "brandName": "باریج اسانس", "module": "hygiene",
+      "issuedAt": "2025-07-01", "expiresAt": "2026-06-30", "status": "valid",
+      "note": "اثربخشی ضدعفونی‌کنندگی ۹۹٫۹٪ تأیید شده."
+    },
+    {
+      "id": "hhc-010", "title": "IRC واردات — کرم‌های نیوآ",
+      "kind": "IRC", "refCode": "IRC-25400112", "issuer": "سازمان غذا و دارو",
+      "brandName": "نیوآ", "module": "hygiene",
+      "issuedAt": "2025-08-12", "expiresAt": "2027-08-11", "status": "pending",
+      "note": "در انتظار نتایج آزمون نمونه وارداتی."
+    },
+    {
+      "id": "hhc-011", "title": "نماد قابل بازیافت — بسته‌بندی دستمال فاخر",
+      "kind": "Recyclable", "refCode": "REC-2204", "issuer": "سازمان محیط زیست",
+      "brandName": "سلولز فاخر", "module": "hygiene",
+      "issuedAt": "2025-04-18", "expiresAt": "2028-04-17", "status": "valid",
+      "note": "کارتن بازیافتی و جوهر سویا."
+    },
+    {
+      "id": "hhc-012", "title": "گواهی حلال — صابون‌های گیاهی",
+      "kind": "حلال", "refCode": "HAL-9455", "issuer": "مرکز حلال جمهوری اسلامی ایران",
+      "brandName": "شون", "module": "hygiene",
+      "issuedAt": "2023-09-09", "expiresAt": "2025-09-08", "status": "expired",
+      "note": "منقضی‌شده — تمدید در دستور کار واحد انطباق."
+    }
+  ]
+}

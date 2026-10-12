@@ -1,0 +1,75 @@
+{
+  "$comment": "مجوزها و استانداردهای ماژول شوینده — پروانه بهداشت، پروانه ساخت، IRC، ISIRI (Mock Data — کارن سافت)",
+  "items": [
+    {
+      "id": "dhc-001", "title": "پروانه بهداشت ساخت — پودر و مایع لباسشویی گلرنگ",
+      "kind": "پروانه بهداشت", "refCode": "HW-56/12489", "issuer": "سازمان غذا و دارو",
+      "brandName": "گلرنگ", "module": "detergent",
+      "issuedAt": "2024-03-15", "expiresAt": "2027-03-14", "status": "valid",
+      "note": "تمدید سالانه پایش می‌شود."
+    },
+    {
+      "id": "dhc-002", "title": "پروانه ساخت وزارت صمت — کارخانه کف داروگر",
+      "kind": "پروانه ساخت", "refCode": "IM-42/7781", "issuer": "وزارت صنعت، معدن و تجارت",
+      "brandName": "کف", "module": "detergent",
+      "issuedAt": "2023-07-01", "expiresAt": "2026-06-30", "status": "expiring",
+      "note": "۲ ماه تا انقضا — اقدام برای تمدید در جریان است."
+    },
+    {
+      "id": "dhc-003", "title": "استاندارد ملی ایران (ISIRI) مایع ظرفشویی",
+      "kind": "استاندارد ملی", "refCode": "ISIRI 2694", "issuer": "سازمان ملی استاندارد ایران",
+      "brandName": "پریمکس", "module": "detergent",
+      "issuedAt": "2025-01-10", "expiresAt": "2028-01-09", "status": "valid",
+      "note": "شامل آزمون‌های قلیاییت، قدرت پاک‌کنندگی و PH."
+    },
+    {
+      "id": "dhc-004", "title": "ثبت کالا (IRC) واردات — پرسیل / اومو",
+      "kind": "IRC", "refCode": "IRC-25100451", "issuer": "سازمان غذا و دارو",
+      "brandName": "پرسیل", "module": "detergent",
+      "issuedAt": "2025-05-20", "expiresAt": "2027-05-19", "status": "valid",
+      "note": "ارزش‌گذاری و تخصیص ارز بر اساس همین پروانه."
+    },
+    {
+      "id": "dhc-005", "title": "گواهی حلال — پودر صابون پینو بیبی",
+      "kind": "حلال", "refCode": "HAL-9123", "issuer": "مرکز حلال جمهوری اسلامی ایران",
+      "brandName": "پینو بیبی", "module": "detergent",
+      "issuedAt": "2024-11-02", "expiresAt": "2026-11-01", "status": "valid",
+      "note": "برای صادرات به بازارهای حلال‌محور."
+    },
+    {
+      "id": "dhc-006", "title": "ISO 9001 — سیستم مدیریت کیفیت پریمکس",
+      "kind": "استاندارد ملی", "refCode": "ISO-9001-2015/IR", "issuer": "TÜV (نمایندگی ایران)",
+      "brandName": "پریمکس", "module": "detergent",
+      "issuedAt": "2024-09-01", "expiresAt": "2027-08-31", "status": "valid",
+      "note": "پایش سالانه ممیزی داخلی."
+    },
+    {
+      "id": "dhc-007", "title": "نماد قابل بازیافت — بسته‌بندی کیسه زباله پارس",
+      "kind": "Recyclable", "refCode": "REC-1120", "issuer": "سازمان محیط زیست",
+      "brandName": "پلاستیک پارس", "module": "detergent",
+      "issuedAt": "2025-02-12", "expiresAt": "2028-02-11", "status": "valid",
+      "note": "بسته‌بندی قابل بازیافت با نماد درج‌شده روی کارتن."
+    },
+    {
+      "id": "dhc-008", "title": "پروانه بهداشت ضدعفونی‌کننده‌های سطوح",
+      "kind": "پروانه بهداشت", "refCode": "HW-58/20331", "issuer": "سازمان غذا و دارو",
+      "brandName": "اکتیوهوم", "module": "detergent",
+      "issuedAt": "2025-04-05", "expiresAt": "2026-04-04", "status": "pending",
+      "note": "در صف بررسی کمیته فنی — پیش‌نویس صادر شده."
+    },
+    {
+      "id": "dhc-009", "title": "گواهی عدم تست روی حیوانات (Cruelty-Free) — فراش",
+      "kind": "Cruelty-Free", "refCode": "CF-778", "issuer": "Leaping Bunny (معتبرسازی داخلی)",
+      "brandName": "فراش", "module": "detergent",
+      "issuedAt": "2025-06-01", "expiresAt": "2027-05-31", "status": "valid",
+      "note": "برچسب cruelty-free روی بسته‌بندی درج می‌شود."
+    },
+    {
+      "id": "dhc-010", "title": "هشدار ایمنی شیمیایی — سفیدکننده‌ها",
+      "kind": "استاندارد ملی", "refCode": "GHS-CL-012", "issuer": "سازمان ملی استاندارد ایران",
+      "brandName": "دامستوس", "module": "detergent",
+      "issuedAt": "2024-08-15", "expiresAt": "2027-08-14", "status": "valid",
+      "note": "برچسب GHS: خورنده، هشدار مخلوط‌نشدن با اسید، دور از دسترس کودکان."
+    }
+  ]
+}
