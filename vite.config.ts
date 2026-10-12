@@ -39,5 +39,12 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    // اجازه دسترسی میزبان‌های پیش‌نمایش آنلاین (sandbox / tunnel)
+    allowedHosts: ['.e2b.app', '.trycloudflare.com', 'localhost', '.localhost'],
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173,
+    allowedHosts: ['.e2b.app', 'localhost', '.localhost'],
   },
 });
